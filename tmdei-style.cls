@@ -315,11 +315,11 @@ KOMA-script documentation for details.}]{fancyhdr}
 \newcommand{\dissertationdisclamer}{A dissertation submitted in partial fulfilment of the \\ requirements for the degree of Master of Science, Area of}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\dissertationdisclamer}{A dissertation submitted in partial fulfillment of \\ the requirements for the degree of Master of Science, Specialisation Area of}
 \providecaptionname{portuguese}{\dissertationdisclamer}{Disserta\c{c}\~ao para obten\c{c}\~ao do Grau de Mestre em \\ Engenharia Inform\'atica, \'Area de Especializa\c{c}\~ao em\\} % Portuguese 
-\newcommand{\supervisorlabel}{Supervisor}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\supervisorlabel}{Supervisor}
+\newcommand{\supervisorlabel}{Orientador}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\supervisorlabel}{Advisor}
 \providecaptionname{portuguese}{\supervisorlabel}{Orientador}
-\newcommand{\cosupervisorlabel}{Co-Supervisor}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\cosupervisorlabel}{Co-Supervisor}
+\newcommand{\cosupervisorlabel}{Co-Advisor}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\cosupervisorlabel}{Co-Orientador}
 \providecaptionname{portuguese}{\cosupervisorlabel}{Co-Orientador}
 \newcommand{\evallabel}{Evaluation Committee}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\evallabel}{Evaluation Committee}
@@ -338,7 +338,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 	\null\vfill
 	\begin{center}
 	{\Huge \bfseries \ttitle}\\ % Thesis title
-	\ifdefined\tsubtitle {\huge \bfseries \tsubtitle} \\ \fi % Thesis sub title, if exists
+	\ifdefined\tsubtitle {\huge \bfseries \tsubtitle} \\ \fi % thesis sub title, if exists
 	\vfill
 	{\huge \bfseries \authorname}\\
 	\vfill
@@ -348,13 +348,16 @@ KOMA-script documentation for details.}]{fancyhdr}
 	{\large \bfseries \noindent \supervisorlabel: \supname } \\
 	\ifdefined\cosupname {\large \bfseries \cosupervisorlabel: \cosupname} \\ \fi
 	\vfill
-	{\normalsize \bfseries \noindent \evallabel:} \\
-	{\normalsize \presidentlabel: } \\
-	\bigskip
-	{\normalsize \presidentname } \\
-	{\normalsize \memberslabel:} \\
-	{\normalsize \committee } \\
-	\smallskip \\
+        % add the thesis committee, if committeepresident is defined
+        \ifdefined\presidentname { 
+    	{\normalsize \bfseries \noindent \evallabel:} \\
+    	{\normalsize \presidentlabel: } \\
+    	\bigskip
+    	{\normalsize \presidentname } \\
+    	{\normalsize \memberslabel:} \\
+    	{\normalsize \committee } \\
+    	\smallskip \\}
+        \fi 
 	\begin{center}
 	{\normalsize \tdate} % Date
 	\end{center}

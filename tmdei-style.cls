@@ -295,6 +295,8 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \def\authorname{}
 \def\ttitle{}
+\newcommand*{\advisor}[1]{\def\advname{#1}}
+\newcommand*{\coadvisor}[1]{\def\coadvname{#1}}
 \newcommand*{\supervisor}[1]{\def\supname{#1}}
 \newcommand*{\cosupervisor}[1]{\def\cosupname{#1}}
 \newcommand*{\thesistitle}[1]{\def\@title{#1}\def\ttitle{#1}}
@@ -315,12 +317,18 @@ KOMA-script documentation for details.}]{fancyhdr}
 \newcommand{\dissertationdisclamer}{A dissertation submitted in partial fulfilment of the \\ requirements for the degree of Master of Science, Area of}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\dissertationdisclamer}{A dissertation submitted in partial fulfillment of \\ the requirements for the degree of Master of Science, Specialisation Area of}
 \providecaptionname{portuguese}{\dissertationdisclamer}{Disserta\c{c}\~ao para obten\c{c}\~ao do Grau de Mestre em \\ Engenharia Inform\'atica, \'Area de Especializa\c{c}\~ao em\\} % Portuguese 
-\newcommand{\supervisorlabel}{Orientador}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\supervisorlabel}{Advisor}
-\providecaptionname{portuguese}{\supervisorlabel}{Orientador}
-\newcommand{\cosupervisorlabel}{Co-Advisor}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\cosupervisorlabel}{Co-Orientador}
-\providecaptionname{portuguese}{\cosupervisorlabel}{Co-Orientador}
+\newcommand{\advisorlabel}{Orientador}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\advisorlabel}{Advisor}
+\providecaptionname{portuguese}{\advisorlabel}{Orientador}
+\newcommand{\coadvisorlabel}{Co-Advisor}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\coadvisorlabel}{Co-Advisor}
+\providecaptionname{portuguese}{\coadvisorlabel}{Co-Orientador}
+\newcommand{\supervisorlabel}{Supervisor}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\supervisorlabel}{Supervisor}
+\providecaptionname{portuguese}{\supervisorlabel}{Supervisor}
+\newcommand{\cosupervisorlabel}{Co-Supervisor}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\cosupervisorlabel}{Co-Supervisor}
+\providecaptionname{portuguese}{\cosupervisorlabel}{Co-Supervisor}
 \newcommand{\evallabel}{Evaluation Committee}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\evallabel}{Evaluation Committee}
 \providecaptionname{portuguese}{\evallabel}{J\'uri}
@@ -345,6 +353,8 @@ KOMA-script documentation for details.}]{fancyhdr}
 	{\Large \bfseries \dissertationdisclamer~\subjectname}
 	\end{center}
 	\vfill
+	{\large \bfseries \noindent \advisorlabel: \advname } \\
+	\ifdefined\cosupname {\large \bfseries \coadvisorlabel: \coadvname} \\ \fi
 	{\large \bfseries \noindent \supervisorlabel: \supname } \\
 	\ifdefined\cosupname {\large \bfseries \cosupervisorlabel: \cosupname} \\ \fi
 	\vfill

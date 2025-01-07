@@ -296,8 +296,10 @@ KOMA-script documentation for details.}]{fancyhdr}
 \def\authorname{}
 \def\ttitle{}
 \newcommand*{\advisor}[1]{\def\advname{#1}}
+\newcommand*{\advisors}[1]{\def\advname{#1}\def\advplural}
 \newcommand*{\coadvisor}[1]{\def\coadvname{#1}}
 \newcommand*{\supervisor}[1]{\def\supname{#1}}
+\newcommand*{\supervisors}[1]{\def\supname{#1}\def\supplural}
 \newcommand*{\cosupervisor}[1]{\def\cosupname{#1}}
 \newcommand*{\thesistitle}[1]{\def\@title{#1}\def\ttitle{#1}}
 \newcommand*{\thesissubtitle}[1]{\def\tsubtitle{#1}}
@@ -317,15 +319,15 @@ KOMA-script documentation for details.}]{fancyhdr}
 \newcommand{\dissertationdisclamer}{A dissertation submitted in partial fulfilment of the \\ requirements for the degree of Master of Science, Area of}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\dissertationdisclamer}{A dissertation submitted in partial fulfillment of \\ the requirements for the degree of Master of Science, Specialisation Area of}
 \providecaptionname{portuguese}{\dissertationdisclamer}{Disserta\c{c}\~ao para obten\c{c}\~ao do Grau de Mestre em \\ Engenharia Inform\'atica, \'Area de Especializa\c{c}\~ao em\\} % Portuguese 
-\newcommand{\advisorlabel}{Orientador}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\advisorlabel}{Advisor}
-\providecaptionname{portuguese}{\advisorlabel}{Orientador}
+\newcommand{\advisorlabel}{Advisor}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\advisorlabel}{\ifdefined\advplural{Advisors}\else{Advisor}\fi}
+\providecaptionname{portuguese}{\advisorlabel}{\ifdefined\advplural{Orientadores}\else{Orientador}\fi}
 \newcommand{\coadvisorlabel}{Co-Advisor}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\coadvisorlabel}{Co-Advisor}
 \providecaptionname{portuguese}{\coadvisorlabel}{Co-Orientador}
 \newcommand{\supervisorlabel}{Supervisor}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\supervisorlabel}{Supervisor}
-\providecaptionname{portuguese}{\supervisorlabel}{Supervisor}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\supervisorlabel}{\ifdefined\supplural{Supervisors}\else{Supervisor}\fi}
+\providecaptionname{portuguese}{\supervisorlabel}{\ifdefined\supplural{Supervisores}\else{Supervisor}\fi}
 \newcommand{\cosupervisorlabel}{Co-Supervisor}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\cosupervisorlabel}{Co-Supervisor}
 \providecaptionname{portuguese}{\cosupervisorlabel}{Co-Supervisor}

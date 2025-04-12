@@ -8,7 +8,26 @@
 
 \subsection{Research Questions}
 
- RQ1 - Quais as melhores práticas para alimentar base de dados vetoriais
+
+RQ1- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?
+
+
+
+RQ2 - Quais frameworks ou bibliotecas disponíveis apresentam melhor desempenho, flexibilidade e facilidade de integração em soluções RAG para suporte técnico?
+
+
+
+
+RQ3 - Quais as melhores práticas para a indexação e recuperação de dados? 
+
+
+RQ4 - Qual a LLM mais adequada para uso de RAG para suporte técnico? 
+
+
+
+
+
+
 
 
 \subsection{Research Scope}
@@ -22,9 +41,93 @@
 
 \section{Results and Analysis}
 
+
+\subsection{RQ1- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}
+
+Existem diversos desafios técnicos na implementação de uma solução RAG para suporte técnico, tais como para a indexação e recuperação de dados, a integração com sistemas existentes no sentido de alimentação do conhecimento e precisão e relevância das respostas. 
+
+\subsubsection{Indexação, recuperação e relevância das respostas}
+
+A eficiência do RAG depende da capacidade de recuperar documentação relevante. No contexto de suporte técnico, a recuperação necessita ser precisa para fornecer soluções corretas o que é desafiador devido à complexidade e especificidade da documentação \parencite{ToroIsaza2024}.
+
+
+No que toca recuperação por similaridades semanticas, \cite{soman2024observations} refere que o uso de embeddings para chunks de texto grandes (> 200 palavras) resulta em valores de similaridade artificialmente altos. Isso sugere que, mesmo quando as frases não são semanticamente parecidas, o modelo acha que são, apenas por serem longas. Contudo, documentação que usa grande número de abreviações e paragrafos para um tópico tornanam as obeservações mais relevantes. Além disso, concluiu-se palavras-chave mais próximas do começo de de uma frase são recuperadas com maior precisão.
+
+Adicionalmente, estudos recentes revelam que sistemas RAG apresentam dificuldades significativas quando aplicados em ambientes empresariais. \textcite{RAGDoesNotWork2024} demonstram que, mesmo quando a resposta correta está presente no contexto, o sistema frequentemente falha em recuperá-la. Isso ocorre, em parte, devido ao desajuste entre a estrutura dos documentos técnicos (como FAQs, procedimentos, logs, etc.) e as estratégias tradicionais de segmentação em chunks.
+
+Essa falha é confirmada por \textcite{SevenPoints2024}, que identificaram múltiplos pontos críticos no funcionamento de sistemas RAG, incluindo:
+
+\begin{itemize}
+    \item Falta de conteúdo: Quando a informação necessária não está no contexto, o sistema pode responder com conteúdos enganosos, sugerindo que sabe a resposta mesmo sem dados de apoio.
+    \item Fraca classificação da documentação: Mesmo com a informação presente no contexto, ela pode não ser corretamente classificada e consequentemente não recuperada. 
+ \item Informação não extraida: Caso haja informações contraditórias no contexto, o retriever pode apresentar falhas.
+  \item Especificidade incorreta: O sistema pode gerar respostas muito vagas ou excessivamente específicas sem compreender especificamente o que foi solicitado.
+\end{itemize}
+
+Diversas técnicas de Finetunning podem ser utilizadas para contornar estas situações.
+
+TODO melhorar daqui para baixo
+Contextos maiores geram respostas mais precisas. A inclusão de metadados, como o nome do ficheiro e número do chunk, melhora a interpretação da informação recuperada. Modelos de embeddings open source também se mostram eficazes, especialmente em textos curtos. Para garantir resultados robustos, é essencial calibrar cuidadosamente o pipeline RAG — incluindo chunking, embeddings, recuperação e consolidação — além de manter uma monitorização contínua, dado que o sistema lida com entradas desconhecidas em tempo real.
+
+
+
+\subsubsection{Integração com Sistemas Existentes}
+
+
+
+
+https://arxiv.org/pdf/2409.13707
+
+https://arxiv.org/pdf/2404.00657
+
+
+\subsection{RQ2 - Quais frameworks ou bibliotecas disponíveis apresentam melhor desempenho, flexibilidade e facilidade de integração em soluções RAG para suporte técnico?}
+
+
+\subsubsection{LangChain}
+
+
+https://www.ibm.com/think/topics/langchain
+
+Fundada por Harrison Chase em 2022, LangChain é uma framework open-source de orquestração para o desenvolvimento de aplicações que fazem uso de LLMs. Está disponível em Python ou Javascript e oferece um ambiente centralizado para construir soluções que integram LLMs com diferentes fontes de dados externas e workflows de software.
+
+É compatível como a maioria dos LLMs como GPT da OpenAI através da respetiva API Key e com modelos open-source como, LLaMa e Google Flan-T5 através da plataforma Hugging Face. 
+Oferece uma maneira comoda de manipular os Prompt Templates para gerar respostas consistentes e possibilita a organização e recuperação de dados contextuais externos. 
+
+Referencia de chains: https://python.langchain.com/v0.1/docs/modules/chains/
+
+Chains são a sua funcionalidade core. Estas representam sequências de chamadas, tanto para um LLM como para ferramentas adicionais, que permitem compor fluxos de processamento complexos de forma modular. LangChain Expression Language (LCEL) é uma linguagem declarativa que facilita a criação de Chains reutilizávies. LCEL fornece diversos construtores de Chains prontos para uso, como: 
+
+\begin{itemize}
+	\item \textit{create\_stuff\_documents\_chain}: Formata uma lista de documentos em um prompt para o LLM.
+	\item \textit{create\_sql\_query\_chain}: Gera consultas SQL a partir linguagem natural.
+	\item \textit{create\_history\_aware\_retrieve}: Utiliza o histórico de conversas para gerar consultas de busca mais precisas.
+	\item \textit{create\_retrieval\_chain}: Integra recuperação de documentos relevantes com geração de respostas por LLM.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\subsubsection{Haystack}
+
+
+\subsubsection{Spring AI}
+
+\subsubsection{LlamaIndex}
+
+
+
+
+
+
 \section{Related Work}
 
-
+nao sei se fica bem aqui este topico
 
 
 

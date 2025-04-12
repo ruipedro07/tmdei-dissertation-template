@@ -33,9 +33,45 @@ Os Large Language Models (LLMs) representam um avanço significativo na IA. Prop
 
 \section{Retrieval-Augmented Generation}
 
-Definição e funcionamento do RAG.
-Diferença entre RAG e abordagens puramente gerativas.
-Benefícios do RAG para suporte técnico.
+Retrieval-Augmented Generation (RAG) é uma técnica que combina LLMs com um mecanismo de recuperação de informação externa. Enquanto que os LLMs apenas se baseiam em dados pré-treinados, o RAG recupera informação relevante de um contexto específico armazenado em base de dados ou documentos. 
+
+Esta técnica conta com dois principais componentes: o  \textit{Retriever} e o  \textit{Generator}.
+
+\begin{itemize}
+    \item \textbf{Retriever}: Baseado na \textit{query} de \textit{input}, a função do \textit{Retriever} é percorrer o conhecimento disponível (p.e. base de dados vetoriais, documentos, fontes \textit{web}) e encontrar informação que vá de encontro a essa \textit{query}. Funciona como uma espécie de motor de busca e é essencial pois determina a relavância e qualidade da informação que será usada para gerar a resposta final. 
+    \item \textbf{Generator}: O \textit{Generator} atua após o \textit{Retriever} ter feito a recuperação de informação relevante, juntando-a com a \textit{query} original para elaborar uma resposta contextualizada. O conhecimento pré-existente é tido em conta pelo o LLM permitindo que as respostas sejam mais inteligentes e informadas para o contexto em questão. 
+\end{itemize}
+
+
+RAG é atualmente usado, por exemplo, para suporte ao consumidor através da criação de Chatbots capazes de recuperar FAQs e o conhecimento do negócio de forma fácil. Gestão do conhecimento empresarial é outro exemplo de caso de uso, pois permite que os funcionários recuperarem e acedam a informação do contexto de trabalho de forma mais rápida. Este último caso de uso vai de encontro aos objetivos do presente projeto. 
+
+TODO Incluir diagrama de arquitetura
+
+
+
+\subsection{Prompt Templates}
+
+São usados para guiar as repostas do modelo reproduzindo um PromptValue. Este é o resultado final da intrução a ser transmitida ao LLM assim que o input do utilizador for executado em cima do template. São importantes pois direcionam a instrução para a obtenção de respostas que vão de em contra ao objetivo da aplicação. 
+
+\begin{lstlisting}[language=Python, caption={Using LangChain to create a prompt template}, label={lst:joke-prompt}]
+from langchain_core.prompts import PromptTemplate
+
+prompt_template = PromptTemplate.from_template("Tell me a joke about {topic}")
+
+prompt_template.invoke({"topic": "cats"})
+\end{lstlisting}
+
+No contexto de uma aplicação para contar anedotas (\ref{lst:joke-prompt}), apenas com a especificação do tema da anedota, neste caso gatos, o template cria o PromptValue "Tell me a joke about cats"  a ser executado pelo LLM.
+
+
+https://python.langchain.com/docs/concepts/prompt\_templates/
+
+
+\subsection{Processo de indexação}
+
+TODO entrar em mais detalhes do RAG pois isto é o core do projeto
+TODO falar de mais componentes do RAG
+
 
 \section{Bases de Dados Vetoriais}
 

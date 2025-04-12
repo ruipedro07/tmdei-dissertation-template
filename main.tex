@@ -28,8 +28,8 @@
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
 %oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side (for drafting/reading purposes)
 %openany, % Starts the chapter on the next page, even or odd (not recommended)
-english, % english for English;
-%portuguese,% for Portuguese; delete temporary files if you change language (e.g. 'make clean; make')
+%english, % english for English;
+portuguese,% for Portuguese; delete temporary files if you change language (e.g. 'make clean; make')
 singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing (for drafting/reading purposes)
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
@@ -61,6 +61,25 @@ headsepline, % Uncomment to get a line under the header
 %\usepackage[style=alphabetic,sorting=none,backend=biber]{biblatex} % Bibtex backend with the alphabetic citation style (alphabetic citations, bibliography ordered by appearance)
 
 
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegray}{gray}{0.95}
+
+\lstset{
+  backgroundcolor=\color{codegray},
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  frame=single,
+  language=Python,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray},
+  stringstyle=\color{orange},
+  showstringspaces=false,
+  tabsize=2
+}
+
+
 \addbibresource{mainbibliography.bib} % The filename of the bibliography
 
 \makeglossaries % build the glossary
@@ -75,9 +94,9 @@ headsepline, % Uncomment to get a line under the header
 
 \author{Rui Pedro Teles Ribeiro} % Your name, this is used in the title page, print it elsewhere with \authorname
 
-\subjectarea{Software Engineering} % Specialisation area (Cybersecurity and Systems Administration; Data Engineering; Software Engineering;Games, Graphics and Interactive Systems; Information and Knowledge Systems), used in the title page, print it elsewhere with \areaname
+\subjectarea{Engenharia de Software} % Specialisation area (Cybersecurity and Systems Administration; Data Engineering; Software Engineering;Games, Graphics and Interactive Systems; Information and Knowledge Systems), used in the title page, print it elsewhere with \areaname
 
-\advisor{Profª. Dra. Piedade Carvalho} % Your advisors's (academic mentor) name, this is used in the title page, print it elsewhere with \advname
+\advisor{Piedade Carvalho} % Your advisors's (academic mentor) name, this is used in the title page, print it elsewhere with \advname
 
 %\advisors{Dr. Jane \textsc{Smith} and Dr. Jake Smith} % In case you have multiple advisors and/or do not want to distinguish between advisor and co-advisor, use \advisors; if defined, will override \advisor
 

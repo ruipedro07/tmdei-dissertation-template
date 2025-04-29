@@ -49,9 +49,10 @@ TODO Incluir diagrama de arquitetura
 
 
 
-\subsection{Prompt Templates}
+\subsection{Prompt Templates} TODO se calhar passar isto para o langchain
 
 São usados para guiar as repostas do modelo reproduzindo um PromptValue. Este é o resultado final da intrução a ser transmitida ao LLM assim que o input do utilizador for executado em cima do template. São importantes pois direcionam a instrução para a obtenção de respostas que vão de em contra ao objetivo da aplicação. 
+
 
 \begin{lstlisting}[language=Python, caption={Using LangChain to create a prompt template}, label={lst:joke-prompt}]
 from langchain_core.prompts import PromptTemplate
@@ -65,6 +66,12 @@ No contexto de uma aplicação para contar anedotas (\ref{lst:joke-prompt}), ape
 
 
 https://python.langchain.com/docs/concepts/prompt\_templates/
+
+
+\subsection{Algoritmos Retriever}
+
+TODO tipo isto https://docs.llamaindex.ai/en/stable/examples/retrievers/bm25_retriever/
+
 
 
 \subsection{Processo de indexação}

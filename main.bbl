@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nyt/global//global/global}
-    \entry{ToroIsaza2024}{article}{}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ToroIsaza2024}{article}{}{}
       \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=b170428b0dc0d06424856c61c0d43a0b}{%
            family={Isaza},
@@ -84,17 +84,18 @@
       }
       \strng{namehash}{4bbb131bd6e49da337d3488ffff151ab}
       \strng{fullhash}{624d5bbd831585b1fb09a60d55e508d0}
+      \strng{fullhashraw}{624d5bbd831585b1fb09a60d55e508d0}
       \strng{bibnamehash}{4bbb131bd6e49da337d3488ffff151ab}
       \strng{authorbibnamehash}{4bbb131bd6e49da337d3488ffff151ab}
       \strng{authornamehash}{4bbb131bd6e49da337d3488ffff151ab}
       \strng{authorfullhash}{624d5bbd831585b1fb09a60d55e508d0}
+      \strng{authorfullhashraw}{624d5bbd831585b1fb09a60d55e508d0}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2409.13707}
       \field{title}{Retrieval Augmented Generation-Based Incident Resolution Recommendation System for IT Support}
       \field{year}{2024}
       \verb{urlraw}
@@ -104,7 +105,48 @@
       \verb https://arxiv.org/abs/2409.13707
       \endverb
     \endentry
+    \entry{soman2024observations}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8786c78308837bbc6c0a23820d9f7e73}{%
+           family={Soman},
+           familyi={S\bibinitperiod},
+           given={Sumit},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b456e63f3427b4e11a33a66aa758ef2}{%
+           family={Roychowdhury},
+           familyi={R\bibinitperiod},
+           given={Sujoy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1139d6f0169954b270485140ff890915}
+      \strng{fullhash}{1139d6f0169954b270485140ff890915}
+      \strng{fullhashraw}{1139d6f0169954b270485140ff890915}
+      \strng{bibnamehash}{1139d6f0169954b270485140ff890915}
+      \strng{authorbibnamehash}{1139d6f0169954b270485140ff890915}
+      \strng{authornamehash}{1139d6f0169954b270485140ff890915}
+      \strng{authorfullhash}{1139d6f0169954b270485140ff890915}
+      \strng{authorfullhashraw}{1139d6f0169954b270485140ff890915}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published as a Tiny Paper at ICLR 2024}
+      \field{title}{Observations on Building RAG Systems for Technical Documents}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2404.00657
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2404.00657
+      \endverb
+    \endentry
   \enddatalist
+  \missing{RAGDoesNotWork2024}
+  \missing{SevenPoints2024}
 \endrefsection
 \endinput
 

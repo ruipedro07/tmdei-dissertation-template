@@ -8,13 +8,9 @@
 
 \subsection{Research Questions}
 
+RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?
 
-RQ1- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?
-
-
-
-RQ2 - Quais frameworks ou bibliotecas disponíveis apresentam melhor desempenho, flexibilidade e facilidade de integração em soluções RAG para suporte técnico?
-
+RQ2 - Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?
 
 
 
@@ -22,10 +18,6 @@ RQ3 - Quais as melhores práticas para a indexação e recuperação de dados?
 
 
 RQ4 - Qual a LLM mais adequada para uso de RAG para suporte técnico? 
-
-
-
-
 
 
 
@@ -42,7 +34,193 @@ RQ4 - Qual a LLM mais adequada para uso de RAG para suporte técnico?
 \section{Results and Analysis}
 
 
-\subsection{RQ1- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}
+
+\subsection{RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}
+
+Antes de apresentar cada tecnologia, importa referir que as informações aqui descritas foram obtidas com base na respetiva documentação oficial disponível nos websites de cada projeto. Nesta análise, cada framework será avaliada segundo três critérios: (i) arquitetura, (ii) flexibilidade e (iii) facilidade de utilização. Adicionalmente, serão também consideradas as formas de integração com bases de dados externas (vector stores ou document stores), bem como o suporte e comunidade em torno de cada projeto.
+
+
+\subsubsection{LangChain}
+
+
+Fundada por Harrison Chase em 2022, LangChain é uma framework open-source para o desenvolvimento de aplicações que integram LLMs com fontes externas de dados e ferramentas de software. Está disponível em Python e JavaScript, oferecendo um ambiente centralizado e altamente extensível para construir soluções com LLMs de forma modular e reutilizável.
+
+\paragraph{Arquitetura}
+
+A arquitetura do LangChain é baseada no conceito de \textit{Chains}, que representam sequências de chamadas a LLMs e a outras ferramentas auxiliares. Estas \textit{Chains} podem ser compostas de forma modular, permitindo construir fluxos de execução complexos com facilidade.
+
+Com a introdução do LangChain Expression Language (LCEL), passou a ser possível definir estas sequências de forma declarativa. O LCEL oferece diversos construtores prontos para uso, como:
+
+\begin{itemize}
+	\item \textit{create\_stuff\_documents\_chain}: Formata uma lista de documentos em um prompt para o LLM.
+	\item \textit{create\_sql\_query\_chain}: Gera consultas SQL a partir linguagem natural.
+	\item \textit{create\_history\_aware\_retrieve}: Utiliza o histórico de conversas para gerar consultas de busca mais precisas.
+	\item \textit{create\_retrieval\_chain}: Integra recuperação de documentos relevantes com geração de respostas por LLM.
+\end{itemize}
+
+
+\paragraph{Flexibilidade}
+
+LangChain é uma das frameworks mais flexíveis atualmente disponíveis. A sua estrutura modular permite criar soluções para diversos domínios — desde sistemas de chat com memória contextual até agentes com raciocínio multi-etapas e integração com APIs externas. Suporta LLMs de múltiplos fornecedores, incluindo:
+
+\begin{itemize} \item OpenAI (via API Key) \item Cohere \item Anthropic (Claude) \item Modelos open-source (como LLaMA, Flan-T5, Mistral, etc.) via Hugging Face \end{itemize}
+
+Os componentes podem ser combinados e substituídos livremente, o que torna o LangChain altamente adaptável a diferentes arquiteturas e necessidades de negócio.
+
+\paragraph{Facilidade de utilização}
+
+A curva de aprendizagem do LangChain pode ser ligeiramente acentuada devido à grande variedade de conceitos e componentes disponíveis. No entanto, a documentação é abrangente e inclui exemplos práticos, tutoriais e guias para casos de uso comuns.
+
+O LCEL veio simplificar bastante o processo de criação de pipelines, ao permitir a definição declarativa de fluxos sem necessidade de escrita de código imperativo detalhado. Ainda assim, o domínio completo da framework pode exigir tempo, especialmente na fase de composição de agentes ou integração de ferramentas externas.
+
+\paragraph{Integração com bases de dados vetoriais e document stores}
+
+LangChain disponibiliza integração nativa com diversos sistemas de armazenamento de documentos, tanto tradicionais como vetoriais, tais como Elasticsearch e Weaviate, duas tecnologias open-source que permitem pesquisa vetorial, armazenamento de embeddings e indexação de documentos.
+
+Estes sistemas são acedidos através de abstrações como \texttt{VectorStoreRetriever} e \texttt{DocumentLoaders}, que permitem a configuração e adaptação do processo de indexação e recuperação de informação de acordo com os requisitos específicos da aplicação.
+
+\paragraph{Suporte e comunidade}
+
+LangChain possui uma comunidade ativa e em crescimento, com elevado dinamismo no repositório GitHub, contanto com mais de cem mil estrelas. A empresa responsável pelo projeto, tem promovido o desenvolvimento contínuo da framework, bem como o lançamento de ferramentas complementares como o LangSmith, destinado à monitorização e depuração de aplicações baseadas em LLMs. Esta vitalidade comunitária traduz-se em documentação continuamente atualizada, partilha regular de boas práticas e integração frequente de contributos externos.
+
+
+======================================================
+
+https://www.ibm.com/think/topics/langchain
+https://python.langchain.com/v0.1/docs/modules/chains/
+
+
+======================================================
+
+
+
+\subsubsection{Haystack}
+
+
+Haystack é uma framework open-source desenvolvida pela empresa alemã Deepset, com o objetivo de facilitar a construção de pipelines baseadas em LLMs, especialmente para casos de uso como RAG, question answering, classificação, extração de informação e pesquisa semântica em documentos. A linguagem principal utilizada é Python. A primeira versão surgiu em 2020, tendo recentemente evoluído para a versão 2.0, com uma reformulação completa da sua arquitetura.
+
+\paragraph{Arquitetura}
+
+A principal inovação do Haystack 2.0 é a sua arquitetura orientada a componentes. Cada componente representa uma unidade funcional independente, com responsabilidade bem definida dentro de uma pipeline. Estes componentes são combinados de forma declarativa para formar pipelines personalizadas, robustas e escaláveis. Entre os tipos de componentes disponíveis encontram-se:
+
+\begin{itemize} \item \textbf{Document Stores}: responsáveis por armazenar documentos e suportar tanto índices tradicionais quanto vetoriais. \item \textbf{Retrievers}: mecanismos de recuperação de informação, com suporte a métodos tradicionais como BM25 e a recuperação semântica com embeddings. \item \textbf{Rankers}: permitem reordenar os documentos recuperados com base em critérios de relevância mais refinados. \item \textbf{Generators}: utilizam LLMs para gerar respostas com base na informação recolhida. \item \textbf{Prompt Nodes}: enviam prompts configuráveis para modelos locais ou remotos. \item \textbf{Routers}: introduzem lógica condicional nas pipelines, facilitando a criação de fluxos adaptativos. \end{itemize}
+
+As pipelines podem ser definidas em ficheiros YAML ou diretamente em Python, promovendo flexibilidade tanto para utilizadores técnicos como não técnicos.
+
+\paragraph{Flexibilidade}
+
+Haystack destaca-se pela sua grande flexibilidade. A arquitetura baseada em componentes independentes permite a substituição e reconfiguração de cada etapa do fluxo de processamento, facilitando a adaptação a diferentes domínios, fontes de dados e estratégias de interação com LLMs. Os desenvolvedores podem ainda combinar múltiplos retrievers, utilizar lógica condicional com routers e integrar diversos serviços externos com relativa facilidade.
+
+\paragraph{Facilidade de utilização}
+
+A curva de aprendizagem do Haystack pode ser moderada, especialmente para utilizadores que não estejam familiarizados com conceitos como pipelines declarativas ou integração com serviços externos. No entanto, a documentação oficial é bastante completa e a existência de pipelines pré-configuradas — como a \texttt{PredefinedPipeline.INDEXING} e a \texttt{PredefinedPipeline.RAG} — facilita bastante o início do desenvolvimento. Estas permitem, respetivamente, indexar documentos e realizar tarefas de RAG com configuração mínima.
+
+\paragraph{Integração com bases de dados vetoriais/document stores}
+
+Haystack oferece suporte nativo a várias tecnologias de armazenamento de documentos, como Elasticsearch e Weaviate, referidos anteriormente. Em ambiente de desenvolvimento, o Haystack oferece o InMemoryDocumentStore, uma opção lightweight que armazena os documentos diretamente em memória, sendo ideal para testes.
+
+\paragraph{Suporte e comunidade}
+
+Haystack possui uma comunidade ativa. O repositório oficial no GitHub conta com mais de vinte mil estrelas (TODO referencia github), issues frequentemente respondidas, e releases regulares. A documentação é extensa, com guias, tutoriais e exemplos práticos.
+
+
+======================================================
+
+https://medium.com/aimonks/haystack-an-alternative-to-langchain-carrying-llms-bf7c515c9a7e
+https://haystack.deepset.ai/overview/intro
+https://docs.haystack.deepset.ai/docs/pipeline-templates
+
+
+
+\subsubsection{LlamaIndex}
+
+TODO
+
+
+
+\subsubsection{Spring AI}
+
+
+Spring AI é uma framework recente, disponibilizada publicamente no início de 2024, com o objetivo de simplificar o desenvolvimento de aplicações baseadas em inteligência artificial, especialmente no ecossistema Java. Inspirado por projetos como LangChain e LlamaIndex, o Spring AI surge como uma extensão natural do ecossistema Spring, promovendo a integração de LLMs em aplicações corporativas de forma modular, acessível e escalável.
+
+\paragraph{Arquitetura}
+
+A arquitetura do Spring AI é orientada a componentes e organizada em torno do conceito de \emph{Advisors}, responsáveis por encapsular diferentes estratégias de interação com LLMs e bases de dados vetoriais. A framework disponibiliza dois tipos principais de \textit{advisors} para fluxos RAG:
+
+\begin{itemize} 
+        \item \textbf{QuestionAnswerAdvisor}: foca-se na recuperação exata de informação a partir de dados externos, construindo respostas exclusivamente com base nos documentos recuperados da base vetorial. 
+        \item \textbf{RetrievalAugmentationAdvisor}: combina a informação externa com o conhecimento prévio embutido no modelo base, permitindo uma resposta enriquecida e mais flexível. 
+\end{itemize}
+
+A comunicação com estes componentes é configurada programaticamente através da API do Spring AI, possibilitando a definição de parâmetros como o limiar de similaridade na pesquisa.
+
+Adicionalmente, a framework estrutura os fluxos de processamento em módulos reutilizáveis, entre os quais se destacam: 
+\begin{itemize} 
+        \item \emph{Document Reader Modules} - para leitura e preparação de documentos; 
+        \item \emph{Embedding Modules} - para geração de vetores a partir de texto; \item \emph{Retriever Modules} - para pesquisa em bases vetoriais; 
+        \item \emph{LLM Modules} - para interação com o modelo de linguagem. 
+\end{itemize}
+
+Esta abordagem modular facilita a composição e manutenção de pipelines RAG personalizadas.
+
+\paragraph{Flexibilidade}
+
+Apesar de ser uma framework emergente, o Spring AI apresenta uma estrutura suficientemente flexível para acomodar diversos casos de uso. A separação clara entre módulos permite que cada fase do pipeline seja configurada ou substituída conforme os requisitos específicos da aplicação.
+
+A framework suporta múltiplos provedores de LLMs, incluindo OpenAI, Hugging Face, Mistral e Cohere, entre outros, com mecanismos de autenticação e configuração standard através do ecossistema Spring.
+
+Por estar profundamente integrado com o ecossistema Spring, a framework beneficia de recursos como injeção de dependências, configuração centralizada, gestão de contexto e integração com outras soluções do universo Spring Boot, o que a torna especialmente atrativa para ambientes corporativos baseados em Java.
+
+\paragraph{Facilidade de utilização}
+
+Um dos principais objetivos do Spring AI é tornar a utilização de LLMs mais acessível a programadores do ecossistema Java. A framework herda a familiaridade e consistência do paradigma Spring, oferecendo uma experiência previsível e bem documentada.
+
+Os \textit{advisors} e módulos podem ser facilmente instanciados e configurados, sendo suportados por exemplos concisos e tutoriais disponíveis na documentação oficial. A integração com ferramentas padrão do Spring (como o Spring Boot Actuator ou o Spring Configuration) facilita a observabilidade e a gestão de parâmetros em ambientes de produção.
+
+Contudo, como se trata de uma framework ainda em evolução, podem existir limitações ao nível de abstrações mais avançadas quando comparada com alternativas mais consolidadas no ecossistema Python.
+
+\paragraph{Integração com bases de dados vetoriais e document stores}
+
+O Spring AI oferece integração nativa com várias bases de dados vetoriais, através da abstração \texttt{VectorStore}. Atualmente, estão disponíveis conectores para:
+
+\begin{itemize} \item \textbf{FAISS} \item \textbf{Qdrant} \item \textbf{Pinecone} \item \textbf{Weaviate} \end{itemize}
+
+Estes armazenamentos vetoriais podem ser utilizados diretamente nos módulos de recuperação, com suporte para parâmetros como o número de documentos a recuperar e o grau de similaridade exigido.
+
+A framework prevê ainda a evolução para incluir mecanismos mais elaborados de pré-processamento de documentos, nomeadamente para segmentação, limpeza e enriquecimento semântico dos conteúdos.
+
+\paragraph{Suporte e comunidade}
+
+Dado o seu lançamento recente, a comunidade do Spring AI ainda se encontra em crescimento. No entanto, beneficia do forte ecossistema da Spring Framework e da extensa base de utilizadores da comunidade Java. O projeto é mantido pela equipa oficial da Spring, o que garante qualidade no design, documentação consistente e ciclos de lançamento regulares.
+
+A documentação oficial cobre os principais casos de uso, e já existem exemplos práticos disponíveis em repositórios públicos que demonstram a aplicação da framework em pipelines RAG.
+
+
+\subsubsection{Comparação resumo entre tecnologias}
+
+
+\begin{table}[H]
+        \centering
+        \renewcommand{\arraystretch}{1.2} % Optional: increases row height for readability
+        \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \textbf{Critério} & \textbf{LangChain} & \textbf{Haystack} & \textbf{Spring AI} \\
+        \hline
+        Arquitetura & Baseada em "Chains" e componentes como Agents, Memory e LCEL; orquestração modular e declarativa. & Arquitetura orientada a componentes; pipelines declarativas compostas por módulos independentes com funções específicas. & Arquitetura modular baseada em "Advisors" e "Modules"; integração com o ecossistema Spring. \\
+        \hline
+        Flexibilidade & Elevada; permite composição livre de fluxos complexos com múltiplos modelos e fontes. & Elevada; pipelines altamente personalizáveis e componentes reutilizáveis. & Moderada a elevada; altamente configurável dentro do ecossistema Spring, mas ainda limitado em abstrações mais avançadas. \\
+        \hline
+        Facilidade de utilização & Intermédia; documentação extensa, mas curva de aprendizagem acentuada devido à diversidade de abstrações. & Intermédia a alta; pipelines declarativas em YAML ou Python facilitam a configuração, apesar da curva inicial. & Alta para programadores Java; abordagem familiar para utilizadores do Spring, com APIs bem documentadas. \\
+        \hline
+        Integração com bases vetoriais / document stores & Suporte nativo a diversos sistemas como FAISS, Pinecone, Chroma, Redis, Weaviate, Qdrant. & Suporte robusto com "Document Stores" como Elasticsearch, Qdrant, Weaviate, entre outros; suportando indexação vetorial e tradicional. & Suporte direto a FAISS, Qdrant, Pinecone, Weaviate; integração através de "VectorStore". \\
+        \hline
+        Suporte e comunidade & Comunidade ampla e ativa; suporte institucional (LangChain Inc.); atualizações regulares e ferramenta complementar (LangSmith). & Comunidade sólida e madura; mantido pela Deepset; documentação rica e projeto bem estabelecido. & Comunidade emergente; mantido pela VMware/Spring Team; documentação em crescimento e roadmap promissor. \\
+        \hline
+        \end{tabularx}
+        \end{table}
+        
+
+\subsection{RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}
 
 Existem diversos desafios técnicos na implementação de uma solução RAG para suporte técnico, tais como para a indexação e recuperação de dados, a integração com sistemas existentes no sentido de alimentação do conhecimento e precisão e relevância das respostas. 
 
@@ -79,135 +257,6 @@ Contextos maiores geram respostas mais precisas. A inclusão de metadados, como 
 https://arxiv.org/pdf/2409.13707
 
 https://arxiv.org/pdf/2404.00657
-
-
-\subsection{RQ2 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}
-
-Antes de apresentar cada tecnologia, importa referir que as informações aqui descritas foram obtidas com base na respetiva documentação oficial disponível nos websites de cada projeto. Nesta análise, cada framework será avaliada segundo três critérios: (i) arquitetura, (ii) flexibilidade e (iii) facilidade de utilização. Adicionalmente, serão também consideradas as formas de integração com bases de dados externas (vector stores ou document stores), bem como o suporte e comunidade em torno de cada projeto.
-
-
-\subsubsection{LangChain}
-
-
-https://www.ibm.com/think/topics/langchain
-
-Fundada por Harrison Chase em 2022, LangChain é uma framework open-source de orquestração para o desenvolvimento de aplicações que fazem uso de LLMs. Está disponível em Python ou Javascript e oferece um ambiente centralizado para construir soluções que integram LLMs com diferentes fontes de dados externas e workflows de software.
-
-É compatível como a maioria dos LLMs como GPT da OpenAI através da respetiva API Key e com modelos open-source como LLaMa e Google Flan-T5 através da plataforma Hugging Face. 
-Oferece uma maneira comoda de manipular os Prompt Templates para gerar respostas consistentes e possibilita a organização e recuperação de dados contextuais externos. 
-
-Referencia de chains: https://python.langchain.com/v0.1/docs/modules/chains/
-
-Chains são a sua funcionalidade core. Estas representam sequências de chamadas, tanto para um LLM como para ferramentas adicionais, que permitem compor fluxos de processamento complexos de forma modular. LangChain Expression Language (LCEL) é uma linguagem declarativa que facilita a criação de Chains reutilizávies. LCEL fornece diversos construtores de Chains prontos para uso, como: 
-
-\begin{itemize}
-	\item \textit{create\_stuff\_documents\_chain}: Formata uma lista de documentos em um prompt para o LLM.
-	\item \textit{create\_sql\_query\_chain}: Gera consultas SQL a partir linguagem natural.
-	\item \textit{create\_history\_aware\_retrieve}: Utiliza o histórico de conversas para gerar consultas de busca mais precisas.
-	\item \textit{create\_retrieval\_chain}: Integra recuperação de documentos relevantes com geração de respostas por LLM.
-\end{itemize}
-
-
-======================================================
-
-TODO falar dos agents? 
-TODO referir que existe integração com ferramentas externas tipo google search 
-TODO referir o suporte com bases de dados vetoriais ou document store (formas de ligação entre informação externa e o sistema)
-TODO suporte/comunidade
-
-TODO ferramentas e ecossistema: 
-TODO Falar Suporte a LangServe, LangSmith (monitoramento), LangGraph (para fluxos complexos).
-
-TODO Comunidade mais ativa, integração com muitos serviços.
-
-
-======================================================
-
-
-
-\subsubsection{Haystack}
-
-
-Haystack é uma framework open-source desenvolvida pela empresa alemã Deepset, com o objetivo de facilitar a construção de pipelines baseadas em LLMs, especialmente para serem usadas em casos de uso de pesquisa, como RAG, respostas a perguntas (question answering), classificação, extração de informação e pesquisa semântica em documentos, sendo a sua linguagem core o Python. A sua primeira versão surgiu em 2020, tendo recentemente evoluido para a sua versão 2.0, que levou à introdução de uma arquitetura completamente modular e orientada a componentes, com foco na flexibilidade, na reutilização e na fácil integração com serviços externos, como OpenAI, Hugging Face e outros.
-
-A principal inovação do Haystack 2.0 reside na sua abordagem centrada em componentes. Cada componente representa uma unidade funcional independente, com uma responsabilidade bem definida dentro de uma pipeline. Esta arquitetura permite que os desenvolvedores construam soluções complexas de forma declarativa, combinando componentes reutilizáveis para formar pipelines personalizadas, robustas e facilmente escaláveis.
-
-Por exemplo, os componentes de armazenamento de documentos, conhecidos como Document Stores, são responsáveis por armazenar e disponibilizar os documentos a serem consultados pelos restantes elementos da pipeline. Estes podem basear-se em tecnologias como Elasticsearch, Weaviate, Qdrant, entre outras, e suportam tanto índices tradicionais quanto vetoriais. Para alimentar estas bases de dados, o Haystack oferece Data Connectors e Indexers, que permitem extrair dados de múltiplas fontes (como diretórios locais, bases de dados ou APIs) e indexá-los com o formato e estrutura apropriados.
-
-A recuperação da informação é realizada através dos Retrievers, que podem operar com base em métodos tradicionais (como BM25 TODO explicar isto na parte do RAG) ou com embeddings gerados por modelos de linguagem, permitindo uma recuperação densa e semântica. Após a recuperação, é possível utilizar Rankers para reordenar os documentos segundo critérios de relevância mais refinados. Em cenários em que se pretende gerar respostas completas com base na informação recolhida, os Generators entram em ação, utilizando modelos LLM para sintetizar respostas naturais e contextualizadas. Alternativamente, podem ser utilizados Prompt Nodes, que consistem em componentes configuráveis que enviam prompts para modelos de linguagem externos ou locais, oferecendo grande flexibilidade na forma como as instruções são formuladas.
-
-Outro elemento importante da arquitetura são os Routers, que introduzem lógica condicional nas pipelines. Com eles, é possível definir fluxos alternativos com base nos resultados de componentes anteriores, facilitando a criação de pipelines mais inteligentes e adaptativas.
-
-Todos estes componentes são integrados dentro de pipelines, que representam a sequência e lógica de execução entre os vários elementos da solução. As pipelines podem ser construidas de forma declarativa através de ficheiros YAML, ou programaticamente em Python, permitindo a configuração parâmetros, condições e integrações externas. 
-
-O Haystack disponibiliza pipelines template que são adequadas para uso em contexto RAG, como a \textit{PredefinedPipeline.INDEXING} que importa ficheiros de texto, cria embeddings para cada um e armazena-os num \textit{InMemoryDocumentStore}. Adicionalmente temos a \textit{PredefinedPipeline.RAG} que usa os dados que foram previamente indexados para gerar respostas contextualizadas sobre essa informação. 
-
-
-
-======================================================
-
-https://medium.com/aimonks/haystack-an-alternative-to-langchain-carrying-llms-bf7c515c9a7e
-https://haystack.deepset.ai/overview/intro
-https://docs.haystack.deepset.ai/docs/pipeline-templates
-
-
-TODO referir o suporte com bases de dados vetoriais ou document store (formas de ligação entre informação externa e o sistema)
-
-TODO suporte/comunidade
-
-
-Haystack:
-
-Tem seu próprio servidor (Haystack REST API).
-
-Ferramentas como Haystack UI para demonstrações.
-
-
-
-
-\subsubsection{LlamaIndex}
-
-TODO
-
-
-
-\subsubsection{Spring AI}
-
-
-O projeto Spring AI ficou disponível a público no inicio de 2024. Surgiu com o objetivo de possibilitar o desenvolvimento de soluções orientadas à inteligencia artificial sem grandes complicações. Foi inspirado em alguns dos projetos que foram referidos anteriormente, como LangChain e LlamaIndex e criado com a crença de não restringir o desenvolvimento deste tipo de soluções apenas para o ecossistema Python, mas também para ecossistemas JVM com o Spring Framework.
-
-Através da sua arquitetura modular, o Spring AI suporta a criação de fluxos RAG personalizados ou a utilização de fluxos template, isto através da Advisor API. 
-
-Dentro desta arquitetura, destaca-se o \emph{QuestionAnswerAdvisor}, cujo objetivo principal é obter informação diretamente de uma base de dados vetorial, construindo uma resposta exclusivamente com os dados recuperados. Esta abordagem ignora o conhecimento prévio embutido no LLM utilizado, assegurando que a resposta é fundamentada apenas nas fontes de dados específicos.
-
-Este advisor recebe por parametro a base de dados vetorial (vectorStore) e opcionalmente um SearchRequest que permite a configuração do grau de similariade de pesquisa. No snippet \ref{lst:question-answer-adviser-0-8} é possível visualizar uma definição do grau de similaridade a 80\%.
-
-
-\begin{lstlisting}[language=Java, caption={Configuração do grau de similaridade do QuestionAnswerAdvisor}, label={lst:question-answer-adviser-0-8}]
-var qaAdvisor = new QuestionAnswerAdvisor(this.vectorStore,
-        SearchRequest.builder().similarityThreshold(0.8d).build());
-\end{lstlisting}
-
-
-Além do \emph{QuestionAnswerAdvisor}, o Spring AI disponibiliza também o \emph{RetrievalAugmentationAdvisor}, que utiliza uma abordagem híbrida entre o conhecimento interno do LLM e a informação recuperada da base de dados vetorial. Neste caso, a resposta gerada pelo modelo pode incorporar tanto os dados recuperados quanto o conhecimento prévio do modelo base, permitindo um equilíbrio mais flexível entre a geração livre e a recuperação dirigida.
-
-A utilização do \emph{RetrievalAugmentationAdvisor} segue uma configuração semelhante, permitindo a parametrização da consulta à base de dados vetorial, mas com a diferença fundamental de que o LLM poderá usar o contexto adicional para enriquecer a resposta final, ao invés de se limitar exclusivamente aos dados recuperados.
-
-TODO exemplo do RetrievalAugmentationAdvisor
-
-Complementarmente, o Spring AI organiza as operações de RAG em componentes denominados \emph{Modules}. Estes módulos são unidades configuráveis que encapsulam diferentes etapas de um fluxo de execução RAG, como a preparação de documentos (\emph{Document Reader Modules}), a transformação de texto em embeddings (\emph{Embedding Modules}), a pesquisa em bases vetoriais (\emph{Retriever Modules}) e a geração de respostas (\emph{LLM Modules}). Esta abordagem modular permite grande flexibilidade na definição de pipelines, podendo os desenvolvedores adaptar cada etapa do fluxo de acordo com os requisitos específicos da aplicação.
-
-
-======================================================
-
-
-
-TODO referir o suporte com bases de dados vetoriais ou document store (formas de ligação entre informação externa e o sistema)
-
-
-
-
-
 
 
 \section{Related Work}

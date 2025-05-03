@@ -29,14 +29,30 @@
 \contentsline {subsection}{\numberline {3.1.4}Selection Process}{7}{subsection.44}%
 \contentsline {subsection}{\numberline {3.1.5}Data Collection}{7}{subsection.45}%
 \contentsline {section}{\numberline {3.2}Results and Analysis}{7}{section.46}%
-\contentsline {subsection}{\numberline {3.2.1}RQ1- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}{7}{subsection.47}%
-\contentsline {subsubsection}{Indexação, recuperação e relevância das respostas}{7}{section*.48}%
-\contentsline {subsubsection}{Integração com Sistemas Existentes}{8}{section*.49}%
-\contentsline {subsection}{\numberline {3.2.2}RQ2 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}{8}{subsection.50}%
-\contentsline {subsubsection}{LangChain}{9}{section*.51}%
-\contentsline {subsubsection}{Haystack}{9}{section*.52}%
-\contentsline {subsubsection}{LlamaIndex}{11}{section*.53}%
-\contentsline {subsubsection}{Spring AI}{11}{section*.54}%
-\contentsline {section}{\numberline {3.3}Related Work}{12}{section.58}%
-\contentsline {chapter}{Bibliografia}{13}{chapter*.59}%
-\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{15}{appendix.60}%
+\contentsline {subsection}{\numberline {3.2.1}RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}{7}{subsection.47}%
+\contentsline {subsubsection}{LangChain}{7}{section*.48}%
+\contentsline {paragraph}{Arquitetura}{8}{section*.49}%
+\contentsline {paragraph}{Flexibilidade}{8}{section*.50}%
+\contentsline {paragraph}{Facilidade de utilização}{8}{section*.51}%
+\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{8}{section*.52}%
+\contentsline {paragraph}{Suporte e comunidade}{9}{section*.53}%
+\contentsline {subsubsection}{Haystack}{9}{section*.54}%
+\contentsline {paragraph}{Arquitetura}{9}{section*.55}%
+\contentsline {paragraph}{Flexibilidade}{10}{section*.56}%
+\contentsline {paragraph}{Facilidade de utilização}{10}{section*.57}%
+\contentsline {paragraph}{Integração com bases de dados vetoriais/document stores}{10}{section*.58}%
+\contentsline {paragraph}{Suporte e comunidade}{10}{section*.59}%
+\contentsline {subsubsection}{LlamaIndex}{10}{section*.60}%
+\contentsline {subsubsection}{Spring AI}{10}{section*.61}%
+\contentsline {paragraph}{Arquitetura}{10}{section*.62}%
+\contentsline {paragraph}{Flexibilidade}{11}{section*.63}%
+\contentsline {paragraph}{Facilidade de utilização}{11}{section*.64}%
+\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{12}{section*.65}%
+\contentsline {paragraph}{Suporte e comunidade}{12}{section*.66}%
+\contentsline {subsubsection}{Comparação resumo entre tecnologias}{13}{section*.67}%
+\contentsline {subsection}{\numberline {3.2.2}RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}{13}{subsection.69}%
+\contentsline {subsubsection}{Indexação, recuperação e relevância das respostas}{14}{section*.70}%
+\contentsline {subsubsection}{Integração com Sistemas Existentes}{14}{section*.71}%
+\contentsline {section}{\numberline {3.3}Related Work}{15}{section.72}%
+\contentsline {chapter}{Bibliografia}{17}{chapter*.73}%
+\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{19}{appendix.74}%

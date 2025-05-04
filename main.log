@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2025.4.29)  1 MAY 2025 23:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2025.4.29)  3 MAY 2025 18:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1207,27 +1207,27 @@ Package csquotes Info: ... found 'babel' package.
 No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 132.
-LaTeX Font Info:    ... okay on input line 132.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported  on input line 132.
-Package translations Info: no dictionary file `translations-basic-dictionary-portuges.trsl' found. on input line 132.
+(babel)             Reported  on input line 133.
+Package translations Info: no dictionary file `translations-basic-dictionary-portuges.trsl' found. on input line 133.
 (C:\Program Files\MIKTEX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count538
@@ -1248,7 +1248,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count544
-Package tocbasic Info: setting babel extension for `lol' on input line 132.
+Package tocbasic Info: setting babel extension for `lol' on input line 133.
  (main.glsdefs) (C:\Program Files\MIKTEX\tex/latex/glossaries-english\glossaries-dictionary-English.dict
 Dictionary: glossaries-dictionary, Language: English 
 )
@@ -1290,24 +1290,24 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package scrbase Info: activating portuguese \dissertationdisclamer on input line 132.
-Package scrbase Info: activating portuguese \advisorlabel on input line 132.
-Package scrbase Info: activating portuguese \coadvisorlabel on input line 132.
-Package scrbase Info: activating portuguese \supervisorlabel on input line 132.
-Package scrbase Info: activating portuguese \cosupervisorlabel on input line 132.
-Package scrbase Info: activating portuguese \evallabel on input line 132.
-Package scrbase Info: activating portuguese \presidentlabel on input line 132.
-Package scrbase Info: activating portuguese \memberslabel on input line 132.
-Package scrbase Info: activating portuguese \statementlabel on input line 132.
-Package scrbase Info: activating portuguese \statementtext on input line 132.
-Package scrbase Info: activating portuguese \dedicationlabel on input line 132.
-Package scrbase Info: activating portuguese \abslabel on input line 132.
-Package scrbase Info: activating portuguese \keywordslabel on input line 132.
-Package scrbase Info: activating portuguese \abslabelotherlang on input line 132.
-Package scrbase Info: activating portuguese \abbrevname on input line 132.
-Package scrbase Info: activating portuguese \constantsname on input line 132.
-Package scrbase Info: activating portuguese \symbolsname on input line 132.
-Package scrbase Info: activating portuguese \acknowledgementlabel on input line 132.
+Package scrbase Info: activating portuguese \dissertationdisclamer on input line 133.
+Package scrbase Info: activating portuguese \advisorlabel on input line 133.
+Package scrbase Info: activating portuguese \coadvisorlabel on input line 133.
+Package scrbase Info: activating portuguese \supervisorlabel on input line 133.
+Package scrbase Info: activating portuguese \cosupervisorlabel on input line 133.
+Package scrbase Info: activating portuguese \evallabel on input line 133.
+Package scrbase Info: activating portuguese \presidentlabel on input line 133.
+Package scrbase Info: activating portuguese \memberslabel on input line 133.
+Package scrbase Info: activating portuguese \statementlabel on input line 133.
+Package scrbase Info: activating portuguese \statementtext on input line 133.
+Package scrbase Info: activating portuguese \dedicationlabel on input line 133.
+Package scrbase Info: activating portuguese \abslabel on input line 133.
+Package scrbase Info: activating portuguese \keywordslabel on input line 133.
+Package scrbase Info: activating portuguese \abslabelotherlang on input line 133.
+Package scrbase Info: activating portuguese \abbrevname on input line 133.
+Package scrbase Info: activating portuguese \constantsname on input line 133.
+Package scrbase Info: activating portuguese \symbolsname on input line 133.
+Package scrbase Info: activating portuguese \acknowledgementlabel on input line 133.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package biblatex Info: Trying to load language 'portuguese'...
@@ -1338,9 +1338,9 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 132.
-Package biblatex Info: Reference segment=0 on input line 132.
-Package hyperref Info: Link coloring OFF on input line 132.
+Package biblatex Info: Reference section=0 on input line 133.
+Package biblatex Info: Reference segment=0 on input line 133.
+Package hyperref Info: Link coloring OFF on input line 133.
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
@@ -1540,25 +1540,25 @@ No file main.acr.
 
 ]) (ch1/chapter1.tex
 Cap\'{\i }tulo 1.
-) (ch2/chapter2.tex
+
 
 [1
 
-]
+]) (ch2/chapter2.tex
 
-[2
-
-]
+Package babel Info: 'portuguese' activates 'portuges' shorthands.
+(babel)             Reported  on input line 3.
+[2]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Trying to load font information for TS1+cmbr on input line 17.
 (C:\Program Files\MIKTEX\tex/latex/cmbright\ts1cmbr.fd
 File: ts1cmbr.fd 2005/04/13 v8.1 (WaS)
 )
 
-[3]
+[3
 
-Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported  on input line 62.
+]
+
 [4]
 
 LaTeX Font Warning: Font shape `T1/cmbr/m/sc' undefined
@@ -1632,273 +1632,277 @@ Overfull \hbox (3.14516pt too wide) in paragraph at lines 129--132
 [10]
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Baseada em
+
+LaTeX Warning: Reference `tab:tec-comp' on page 12 undefined on input line 202.
+
+
+Overfull \hbox (3.34218pt too wide) in paragraph at lines 219--219
+[]|\T1/cmbr/bx/n/10.95 Flexibilidade| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 "Chains"e com-
+[]|\T1/cmbr/bx/n/10.95 Facilidade
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 po-nen-tes como
+\T1/cmbr/bx/n/10.95 de uti-li-za-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Arquitetura ori-
- []
-
-
-Underfull \hbox (badness 6348) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 en-tada a com-po-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 nen-tes; pi-pe-li-nes
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 de-cla-ra-ti-vas com-
- []
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 in-de-pen-den-tes com
+[]|\T1/cmbr/bx/n/10.95 Integração
  []
 
 
 Underfull \hbox (badness 4492) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 ba-se-ada em "Ad-
+\T1/cmbr/bx/n/10.95 com ba-ses
+ []
+
+
+Underfull \hbox (badness 5217) in paragraph at lines 219--219
+\T1/cmbr/bx/n/10.95 ve-to-ri-ais /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/bx/n/10.95 do-cu-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\T1/cmbr/bx/n/10.95 Suporte,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/bx/n/10.95 co-mu-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/bx/n/10.95 dade e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/bx/n/10.95 do-cu-men-
+ []
+
+
+Overfull \hbox (4.5701pt too wide) in paragraph at lines 219--219
+[]|\T1/cmbr/m/n/10.95 Orquestração
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 mo-du-lar e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\T1/cmbr/m/n/10.95 FAISS,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 Pi-ne-cone,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 Ch-roma,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 Re-dis,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 We-a-vi-ate,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\T1/cmbr/m/n/10.95 Comunidade
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 / Su-porte
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 men-ta-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\T1/cmbr/m/n/10.95 Arquitetura
  []
 
 
 Underfull \hbox (badness 3838) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 in-te-gra-ção com o
+\T1/cmbr/m/n/10.95 ori-en-tada a
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Elevada; per-mite
+\T1/cmbr/m/n/10.95 com-po-nen-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 flu-xos com-ple-xos
- []
-
-
-Underfull \hbox (badness 8056) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Elevada; pi-pe-li-nes
+[]|\T1/cmbr/m/n/10.95 Suporte
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Moderada a ele-
+\T1/cmbr/m/n/10.95 ro-busto
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 vada; al-ta-mente
- []
-
-
-Underfull \hbox (badness 1152) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 con-fi-gu-rá-vel den-tro
+\T1/cmbr/m/n/10.95 ment Sto-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 do ecos-sis-tema
- []
-
-
-Underfull \hbox (badness 1694) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 Spring, mas ainda
- []
-
-
-Underfull \hbox (badness 8132) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 li-mi-tado em abs-
+\T1/cmbr/m/n/10.95 res"como
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 tra-ções mais
- []
-
-
-Underfull \hbox (badness 7558) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Intermédia; do-cu-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 men-ta-ção ex-tensa,
- []
-
-
-Underfull \hbox (badness 1314) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 di-za-gem acen-tu-ada
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Intermédia a alta;
- []
-
-
-Underfull \hbox (badness 7944) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 pi-pe-li-nes de-cla-ra-ti-
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 vas em YAML ou
- []
-
-
-Underfull \hbox (badness 3439) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 con-fi-gu-ra-ção, ape-
+\T1/cmbr/m/n/10.95 Elas-tic-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Alta para pro-
+\T1/cmbr/m/n/10.95 se-arch,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 gra-ma-do-res Java;
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 abor-da-gem fa-mi-liar
- []
-
-
-Underfull \hbox (badness 2564) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 Spring, com APIs
+\T1/cmbr/m/n/10.95 Qdrant,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Suporte na-tivo a
+\T1/cmbr/m/n/10.95 We-a-vi-ate;
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 di-ver-sos sis-te-mas
- []
-
-
-Underfull \hbox (badness 7540) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 como FAISS, Pi-
+\T1/cmbr/m/n/10.95 su-por-tando
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 ne-cone, Ch-roma,
+\T1/cmbr/m/n/10.95 in-de-xa-ção
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 Re-dis, We-a-vi-ate,
+\T1/cmbr/m/n/10.95 ve-to-rial e
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Suporte ro-busto
+[]|\T1/cmbr/m/n/10.95 Comunidade
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 com "Do-cu-ment
- []
-
-
-Underfull \hbox (badness 4403) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 Sto-res"como Elas-
- []
-
-
-Underfull \hbox (badness 6995) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 tic-se-arch, Qdrant,
+\T1/cmbr/m/n/10.95 / Su-porte
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 We-a-vi-ate, en-tre
+\T1/cmbr/m/n/10.95 cu-men-ta-ção
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Suporte di-reto a
- []
-
-
-Underfull \hbox (badness 4634) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 ne-cone, We-a-vi-ate;
+[]|\T1/cmbr/m/n/10.95 Arquitetura
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 in-te-gra-ção atra-vés
+\T1/cmbr/m/n/10.95 mo-du-lar;
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Comunidade am-
- []
-
-
-Underfull \hbox (badness 5652) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 pla e ativa; su-
+\T1/cmbr/m/n/10.95 in-te-gra-ção
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 porte ins-ti-tu-ci-o-nal
+\T1/cmbr/m/n/10.95 com o
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 (Lang-Chain Inc.);
+\T1/cmbr/m/n/10.95 ecos-sis-tema
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 atu-a-li-za-ções re-gu-
- []
-
-
-Underfull \hbox (badness 1789) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 la-res e fer-ra-menta
+[]|\T1/cmbr/m/n/10.95 Alta para
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 com-ple-men-tar
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Comunidade só-lida
- []
-
-
-Underfull \hbox (badness 2941) in paragraph at lines 219--219
-[]|\T1/cmbr/m/n/10.95 Comunidade emer-
+\T1/cmbr/m/n/10.95 pro-gra-ma-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 219--219
-\T1/cmbr/m/n/10.95 VMwa-re/S-pring
+[]|\T1/cmbr/m/n/10.95 FAISS,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 Qdrant,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 Pi-ne-cone,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 We-a-vi-ate;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 in-te-gra-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 atra-vés de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 "Vec-torS-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\T1/cmbr/m/n/10.95 Comunidade
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+\T1/cmbr/m/n/10.95 ta-ção em
  []
 
 
@@ -1907,14 +1911,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--219
 
 [13]
 
-LaTeX Warning: Citation 'RAGDoesNotWork2024' on page 14 undefined on input line 234.
+LaTeX Warning: Reference `tab:tec-comp' on page 14 undefined on input line 231.
 
 
-LaTeX Warning: Citation 'SevenPoints2024' on page 14 undefined on input line 236.
+LaTeX Warning: Citation 'RAGDoesNotWork2024' on page 14 undefined on input line 246.
 
-)
 
-[14]
+LaTeX Warning: Citation 'SevenPoints2024' on page 14 undefined on input line 248.
+
+
+
+[14])
 
 [15]
 
@@ -1963,17 +1970,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59388 strings out of 469964
- 1402396 string characters out of 5480025
- 2367822 words of memory out of 5000000
- 85274 multiletter control sequences out of 15000+600000
+ 59392 strings out of 469964
+ 1402465 string characters out of 5480025
+ 2368504 words of memory out of 5000000
+ 85278 multiletter control sequences out of 15000+600000
  645786 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,20n,131p,2475b,2863s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbrmi8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\ebmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\ebtl10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\tbmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbrsy8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbrmi10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\ebmr9.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi450\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebtl10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebmo10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi720\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi864\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi1244\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi1493\ebbx10.pk>
-Output written on main.pdf (39 pages, 261778 bytes).
+Output written on main.pdf (39 pages, 273015 bytes).
 PDF statistics:
- 891 PDF objects out of 1000 (max. 8388607)
+ 906 PDF objects out of 1000 (max. 8388607)
  117 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

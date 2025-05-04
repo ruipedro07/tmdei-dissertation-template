@@ -199,25 +199,37 @@ A documentação oficial cobre os principais casos de uso, e já existem exemplo
 \subsubsection{Comparação resumo entre tecnologias}
 
 
+Para resumir, na Tabela \ref{tab:tec-comp} estão descritos os principais pontos de comparação entre as diferentes tecnologias analisadas. 
+
 \begin{table}[H]
         \centering
-        \renewcommand{\arraystretch}{1.2} % Optional: increases row height for readability
-        \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \caption{Comparação entre tecnologias RAG}
+        \label{tab:tec-comp}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabularx}{\textwidth}{|X|X|X|X|X|X|}
         \hline
-        \textbf{Critério} & \textbf{LangChain} & \textbf{Haystack} & \textbf{Spring AI} \\
+        \textbf{Ferramenta} & \textbf{Arquitetura} & \textbf{Flexibilidade} & \textbf{Facilidade de utilização} & \textbf{Integração com bases vetoriais / document stores} & \textbf{Suporte, comunidade e documentação} \\
         \hline
-        Arquitetura & Baseada em "Chains" e componentes como Agents, Memory e LCEL; orquestração modular e declarativa. & Arquitetura orientada a componentes; pipelines declarativas compostas por módulos independentes com funções específicas. & Arquitetura modular baseada em "Advisors" e "Modules"; integração com o ecossistema Spring. \\
+        \textbf{LangChain} & Orquestração modular e declarativa & Elevada & Intermédia &  FAISS, Pinecone, Chroma, Redis, Weaviate, Qdrant. & Comunidade / Suporte \textbf{++} ; Documentação extensa \\
         \hline
-        Flexibilidade & Elevada; permite composição livre de fluxos complexos com múltiplos modelos e fontes. & Elevada; pipelines altamente personalizáveis e componentes reutilizáveis. & Moderada a elevada; altamente configurável dentro do ecossistema Spring, mas ainda limitado em abstrações mais avançadas. \\
+        \textbf{Haystack} & Arquitetura orientada a componentes & Elevada & Intermédia a alta & Suporte robusto com "Document Stores" como Elasticsearch, Qdrant, Weaviate; suportando indexação vetorial e tradicional. & Comunidade / Suporte \textbf{+++} ; Documentação extensa \\
         \hline
-        Facilidade de utilização & Intermédia; documentação extensa, mas curva de aprendizagem acentuada devido à diversidade de abstrações. & Intermédia a alta; pipelines declarativas em YAML ou Python facilitam a configuração, apesar da curva inicial. & Alta para programadores Java; abordagem familiar para utilizadores do Spring, com APIs bem documentadas. \\
-        \hline
-        Integração com bases vetoriais / document stores & Suporte nativo a diversos sistemas como FAISS, Pinecone, Chroma, Redis, Weaviate, Qdrant. & Suporte robusto com "Document Stores" como Elasticsearch, Qdrant, Weaviate, entre outros; suportando indexação vetorial e tradicional. & Suporte direto a FAISS, Qdrant, Pinecone, Weaviate; integração através de "VectorStore". \\
-        \hline
-        Suporte e comunidade & Comunidade ampla e ativa; suporte institucional (LangChain Inc.); atualizações regulares e ferramenta complementar (LangSmith). & Comunidade sólida e madura; mantido pela Deepset; documentação rica e projeto bem estabelecido. & Comunidade emergente; mantido pela VMware/Spring Team; documentação em crescimento e roadmap promissor. \\
+        \textbf{Spring AI} & Arquitetura modular; integração com o ecossistema Spring. & Moderada a elevada & Alta para programadores Java & FAISS, Qdrant, Pinecone, Weaviate; integração através de "VectorStore". & Comunidade / Suporte \textbf{+} ; Documentação em crescimento  \\
         \hline
         \end{tabularx}
-        \end{table}
+    \end{table}
+
+Em termos de arquitetura as tecnologias são semelhantes em alguns principios gerais, mas diferem na forma como organizam os componentes. A LangChain usa o conceito de chains e agents que permite encadear multiplos passos de forma declarativa. Já a Haystack possui um arquitetura orientada a componentes reutilizáveis. Na Spring AI a arquitetura é modular e integrada no ecossistema Sprint Boot com foco para desenvolvedores Java, usando abstrações típicas do Spring. 
+
+
+No que diz respeito à flexibilidade, LangChain e Haystack oferecem maior capacidade de personalização, com suporte a múltiplas configurações e integrações. O Spring AI, apesar de mais recente, apresenta uma modularidade sólida, embora mais orientada a padrões corporativos Java.
+
+Em termos de facilidade de utilização, o Spring AI proporciona uma curva de aprendizagem mais suave para programadores familiarizados com Spring Boot. A Haystack combina flexibilidade com pipelines pré-configuradas, ao passo que a LangChain, apesar de poderosa, exige maior domínio técnico para compor soluções complexas.
+
+Todas as ferramentas analisadas oferecem integração com sistemas de armazenamento vetorial da atualidade, como FAISS, Qdrant e Weaviate. O suporte é robusto e adaptável em todas, com destaque para a abstração VectorStore no Spring AI e a diversidade de conectores nativos no Haystack.
+
+Por fim, no que respeita a suporte e comunidade, LangChain e Haystack apresentam ecossistemas consolidados, com documentação extensa, comunidades ativas e evolução contínua — refletido na Tabela \ref{tab:tec-comp} com os níveis \textbf{++} e \textbf{+++}, respetivamente. O Spring AI, embora ainda em fase de maturação, conta com documentação estruturada e o respaldo da comunidade Spring, o que lhe confere um nível \textbf{+} na escala adotada, indicando um bom ponto de partida com potencial de crescimento acelerado.
+
         
 
 \subsection{RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}

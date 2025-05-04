@@ -12,9 +12,67 @@
 
 \section{Problem}
 
+A Natixis é uma empresa do setor financeiro, parte do grupo bancário francês BPCE (Banque Populaire,
+ Caisse d'Epargne). Ela atua principalmente em banca de investimentos, gestão de ativos, seguros e serviços
+ financeiros especializados [1].
+
+ Atualmente a equipa "B2C" da Natixis efetua tarefas diárias de suporte técnico no sistema pelo qual é
+ responsável. Este é um sistema maioritariamente responsável pelo cálculo de risco de crédito bancário. O
+ sistema respeita um fluxo bem definido sendo que diariamente correm diversos processos. Primeiramente
+ vem a fase de alimentação, onde o sistema injeta dados provenientes de sistemas externos e popula as
+ tabelas brutas da base de dados. De seguida vem o processo de enriquecimento dos dados, onde os
+ mesmos são analisados em termos de qualidade, sendo aplicadas regras de negócio para os alterar e
+ armazenar. Todo esse processo é auditado em ficheiros e/ou tabelas específicas na base de dados. Por fim
+ vem o processo de cálculo, que pode ser de vários tipos, como por exemplo RC B3 (Cálculo do Capital
+ Ponderado pelo Risco - B3) que nos sistemas bancários se refere, normalmente, aos requisitos de capital
+ regulamentares definidos pelo acordo de Basel III [2].
+ Todo este processo é controlado diariamente pelo Control-M. O Control-M é uma ferramenta de automação
+ de workload e gestão de jobs [3]. Ele é amplamente utilizado para agendar, monitorizar e gerir processos
+ batch. A equipa de suporte é responsável por gerir esta chain, sendo que cada processo (alimentação,
+ enriquecimento e cálculo) é composto por diversos batchs que executam maioritariamente código Perl e
+ Java.
+
+ Falhas na chain são comuns de acontecer e podem ter diversos motivos, como erros nos dados externos que
+ violem as regras de negócio, problemas de código provenientes de desenvolvimentos recentes, entre outros.
+ A equipa é também responsável por lançar processos "on demand", facilitar o esclarecimento de questões
+ relacionadas com regras de negócio aos utilizadores/partes interessadas, entre outras atividades.
+ Devido à dimensão do software e à quantidade de diferentes processos envolvidos, por vezes a atividade de
+ suporte torna-se uma tarefa bastante complicada para a equipa responsável.
+
 
 
 \section{Objectives}
+
+Explorar Retrieval-augmented generation (RAG) juntamente com Large Language Model (LLM) para construir
+ um sistema que forneça auxílio à tomada de decisão nas atividades de suporte, pela geração de informação
+ contextualizada.
+ Retrieval-Augmented Generation (RAG) combina a geração de texto por Large Language Models (LLMs) com
+ recuperação de conhecimento externo, permitindo respostas mais informadas e específicas [4].
+ Os LLMs, como GPT, Llama e Mistral, são modelos que possuem um vasto conhecimento, mas não
+ conseguem aceder a informações de domínios específicos. O RAG resolve essa limitação ao combinar uma
+ base de dados vetorial para armazenar representações semânticas de documentos e consultas, permitindo
+ que o modelo recupere a informação mais relevante antes de gerar uma resposta. Essas bases de dados
+ vetoriais utilizam embeddings, que representam o significado semântico do texto em um espaço
+ multidimensional, possibilitando pesquisas mais eficientes e contextuais [4,5].
+ A aplicação do RAG neste contexto permitirá otimizar a eficiência da equipa de suporte, reduzindo o tempo
+ gasto na procura de informação e facilitando a resolução de incidentes.
+
+ Funcionalidades a explorar:
+
+ - Facilitar e agilizar a obtenção de informação relevante para resolução de determinado problema. O
+ software deverá fornecer insights de passos a tomar com base no conhecimento que possui.
+ - Automatizar a extração de conhecimento de fontes diversas, como manuais e logs de execução,
+ integrando-se com as ferramentas utilizadas pela equipa (p.e. Control-M, Confluence, Outlook e Teams).
+ - Auxiliar na resolução de problemas ao sugerir soluções com base em experiências anteriores e na
+ análise de padrões de erro.
+
+ O projeto irá obedecer à seguinte ordem cronológica:
+
+ - Primeira fase: Análise de KPIs históricos na vertente de resolução de incidentes.
+ - Segunda fase: Pesquisa / análise de trabalhos relacionados e boas práticas.
+ - Terceira fase: Levantamento de requisitos.
+ - Quarta fase: Implementação da solução.
+ - Quinta fase: Testes.
 
 \section{Methodology}
 

@@ -105,6 +105,62 @@
       \verb https://arxiv.org/abs/2409.13707
       \endverb
     \endentry
+    \entry{lee2024development}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=5c698200d2cc6b74dc7ad8087db3dfe0}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Ho-Chit},
+           giveni={H\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe817ee08b7b7a288434815d4c4c0596}{%
+           family={Hung},
+           familyi={H\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=476c0ecd43b1fea6983e30455dbb4f14}{%
+           family={Man},
+           familyi={M\bibinitperiod},
+           given={Gary\bibnamedelima Man-Tat},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinithyphendelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80bdac9a67ea9781d256364d866657df}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Raymond},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa6b32488e24bc3133514db31bdce575}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{3fecff1a4f75dc7065186597058a5b3c}
+      \strng{fullhash}{d5e79ff8740463cf156af36ce8f362b5}
+      \strng{fullhashraw}{d5e79ff8740463cf156af36ce8f362b5}
+      \strng{bibnamehash}{3fecff1a4f75dc7065186597058a5b3c}
+      \strng{authorbibnamehash}{3fecff1a4f75dc7065186597058a5b3c}
+      \strng{authornamehash}{3fecff1a4f75dc7065186597058a5b3c}
+      \strng{authorfullhash}{d5e79ff8740463cf156af36ce8f362b5}
+      \strng{authorfullhashraw}{d5e79ff8740463cf156af36ce8f362b5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{TENCON 2024-2024 IEEE Region 10 Conference (TENCON)}
+      \field{title}{Development of an RAG-Based LLM Chatbot for Enhancing Technical Support Service}
+      \field{year}{2024}
+      \field{pages}{1080\bibrangedash 1083}
+      \range{pages}{4}
+    \endentry
     \entry{soman2024observations}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8786c78308837bbc6c0a23820d9f7e73}{%
@@ -147,6 +203,7 @@
   \enddatalist
   \missing{RAGDoesNotWork2024}
   \missing{SevenPoints2024}
+  \missing{fig:opti-micro-arch}
 \endrefsection
 \endinput
 

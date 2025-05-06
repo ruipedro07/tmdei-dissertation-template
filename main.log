@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2025.4.29)  3 MAY 2025 18:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2025.4.29)  6 MAY 2025 23:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1337,6 +1337,13 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                fig:opti-micro-arch
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
 )
 Package biblatex Info: Reference section=0 on input line 133.
 Package biblatex Info: Reference segment=0 on input line 133.
@@ -1921,15 +1928,24 @@ LaTeX Warning: Citation 'SevenPoints2024' on page 14 undefined on input line 248
 
 
 
-[14])
+[14]
 
-[15]
+LaTeX Warning: Reference `fig:opti-micro-arch' on page 15 undefined on input line 282.
 
-[16
+<ch3/assets/optimicro-arch.png, id=248, 841.1425pt x 652.4375pt>
+File: ch3/assets/optimicro-arch.png Graphic file (type png)
+<use ch3/assets/optimicro-arch.png>
+Package pdftex.def Info: ch3/assets/optimicro-arch.png  used on input line 286.
+(pdftex.def)             Requested size: 423.9459pt x 328.83621pt.
 
-] (appendices/appendixA.tex
 
-[17]
+[15])
+
+[16 <./ch3/assets/optimicro-arch.png (PNG copy)>] (appendices/appendixA.tex
+
+[17
+
+]
 
 [18
 
@@ -1959,7 +1975,7 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  42FB3345F68857633997A19CCD8E2321;7539.
+(rerunfilecheck)             After:  07E38CDB175A3E63FED3F6A51BFF6F29;7817.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1970,17 +1986,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59392 strings out of 469964
- 1402465 string characters out of 5480025
+ 59414 strings out of 469964
+ 1403113 string characters out of 5480025
  2368504 words of memory out of 5000000
- 85278 multiletter control sequences out of 15000+600000
+ 85297 multiletter control sequences out of 15000+600000
  645786 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,20n,131p,2475b,2863s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbrmi8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\ebmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\ebtl10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\tbmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbrsy8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbrmi10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\ebmr9.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi450\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebtl10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebmo10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi720\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi864\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi1244\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi1493\ebbx10.pk>
-Output written on main.pdf (39 pages, 273015 bytes).
+Output written on main.pdf (39 pages, 450126 bytes).
 PDF statistics:
- 906 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 929 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -54,5 +54,6 @@
 \contentsline {subsubsection}{Indexação, recuperação e relevância das respostas}{14}{section*.70}%
 \contentsline {subsubsection}{Integração com Sistemas Existentes}{15}{section*.71}%
 \contentsline {section}{\numberline {3.3}Related Work}{15}{section.72}%
-\contentsline {chapter}{Bibliografia}{17}{chapter*.73}%
-\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{19}{appendix.74}%
+\contentsline {subsection}{\numberline {3.3.1}RAG chatbot para a OptiMicro Technologies}{15}{subsection.73}%
+\contentsline {chapter}{Bibliografia}{17}{chapter*.75}%
+\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{19}{appendix.76}%

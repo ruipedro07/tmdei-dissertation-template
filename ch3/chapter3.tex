@@ -273,7 +273,40 @@ https://arxiv.org/pdf/2404.00657
 
 \section{Related Work}
 
-nao sei se fica bem aqui este topico
+\subsection{RAG chatbot para a OptiMicro Technologies}
+
+A OptiMicro, empresa de software Canadiana, decidiu apostar no desenvolvimento de um chatbot utilizando RAG para melhorar o seu serviço de apoio técnico da empresa, mais especificamente no seu serviço DentalWare.
+
+O software foi desenvolvido através de uma plataforma lowcode denominada Flowise AI e a sua arquitetura consistiu em três fases principais: indexação, recuperação e geração. Na fase de indexação, foram utilizados registos de suporte técnico e manuais do software DentalWare, segmentados em chunks de texto. Os dados foram convertidos em vetores através do modelo all-MiniLM-L6-v2, acedido via API da HuggingFace, e armazenados numa base de dados vetorial Pinecone, escolhida pela sua elevada performance. Na etapa de recuperação, a query do utilizador é embedded com o mesmo modelo e comparada com os vetores indexados, sendo selecionados os segmentos mais relevantes. Por fim, a resposta é gerada com o modelo LLaMA 2 (7B), executado localmente via Ollama. 
+
+Esta arquitetura encontra-se descrita no diagrama da Figura \ref{fig:opti-micro-arch}, onde é possível verificar de que forma os componentes se relacionam. É de notar que foram utilizados dois documentos como fonte de informação externa definidos de forma estática, tornando o software um pouco restrito.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{ch3/assets/optimicro-arch.png}
+        \caption{Arquitetura do chatbot RAG da OptiMircro \parencite{lee2024development}}
+        \label{fig:opti-micro-arch}
+\end{figure}
+
+
+Para avaliar o desempenho do chatbot, foram utilizadas 75 questões reais relacionadas com suporte técnico ao software DentalWare. As respostas geradas por este chatbot foram comparadas com as de um chatbot LLM genérico, tendo ambas sido avaliadas com base nos critérios de ROUGE (ROUGE-1, ROUGE-2 e ROUGE-L) e por humanos da OptiMicro. Os resultados demonstraram que o chatbot RAG obteve melhores pontuações em todas as métricas ROUGE, destacando-se com aumentos de 38\%, 18\% e 40\%, respetivamente, face ao modelo genérico, o que evidencia uma maior fidelidade aos conteúdos técnicos. Na avaliação humana, o chatbot RAG obteve 20 respostas classificadas como boas, 18 como razoáveis e apenas 2 como fracas, enquanto o LLM genérico apresentou apenas 3 boas respostas e 2 razoáveis, totalizando 70 respostas consideradas fracas. Estes resultados confirmam a superioridade do modelo RAG no contexto de apoio técnico, pela sua capacidade de gerar respostas mais relevantes e alinhadas com os dados específicos da empresa.
+
+
+
+TODO ponto negativa deste software: não foi implementado mecanismo para atualizar automaticamente a base de dados vetorial consoante updates na documentação
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

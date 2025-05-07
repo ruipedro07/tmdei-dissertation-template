@@ -55,5 +55,7 @@
 \contentsline {subsubsection}{Integração com Sistemas Existentes}{15}{section*.71}%
 \contentsline {section}{\numberline {3.3}Related Work}{15}{section.72}%
 \contentsline {subsection}{\numberline {3.3.1}RAG chatbot para a OptiMicro Technologies}{15}{subsection.73}%
-\contentsline {chapter}{Bibliografia}{17}{chapter*.75}%
-\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{19}{appendix.76}%
+\contentsline {subsection}{\numberline {3.3.2}Retrieval Augmented Generation-Based Incident Resolution Recommendation System for IT Support}{16}{subsection.75}%
+\contentsline {subsection}{\numberline {3.3.3}Fabula}{17}{subsection.76}%
+\contentsline {chapter}{Bibliografia}{19}{chapter*.77}%
+\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{21}{appendix.78}%

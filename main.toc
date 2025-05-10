@@ -8,54 +8,57 @@
 \contentsline {section}{\numberline {1.1}Context}{1}{section.17}%
 \contentsline {section}{\numberline {1.2}Problem}{1}{section.18}%
 \contentsline {section}{\numberline {1.3}Objectives}{1}{section.19}%
-\contentsline {section}{\numberline {1.4}Methodology}{2}{section.20}%
-\contentsline {section}{\numberline {1.5}Work Plan}{2}{section.21}%
-\contentsline {section}{\numberline {1.6}Document Structure}{2}{section.22}%
-\contentsline {chapter}{\numberline {2}Key Concepts}{3}{chapter.23}%
-\contentsline {section}{\numberline {2.1}Artificial Intelligence}{3}{section.24}%
-\contentsline {section}{\numberline {2.2}Machine Learning \& Deep Learning}{3}{section.25}%
-\contentsline {section}{\numberline {2.3}Large Language Models}{3}{section.26}%
-\contentsline {section}{\numberline {2.4}Retrieval-Augmented Generation}{4}{section.27}%
-\contentsline {subsection}{\numberline {2.4.1}Prompt Templates}{4}{subsection.28}%
-\contentsline {subsection}{\numberline {2.4.2}Algoritmos Retriever}{5}{subsection.35}%
-\contentsline {subsection}{\numberline {2.4.3}Processo de indexação}{5}{subsection.36}%
-\contentsline {section}{\numberline {2.5}Bases de Dados Vetoriais}{5}{section.37}%
-\contentsline {section}{\numberline {2.6}Aplicação ao Suporte Técnico}{5}{section.38}%
-\contentsline {chapter}{\numberline {3}State of the Art}{7}{chapter.39}%
-\contentsline {section}{\numberline {3.1}Methodology}{7}{section.40}%
-\contentsline {subsection}{\numberline {3.1.1}Research Questions}{7}{subsection.41}%
-\contentsline {subsection}{\numberline {3.1.2}Research Scope}{7}{subsection.42}%
-\contentsline {subsection}{\numberline {3.1.3}Eligibility Criteria}{7}{subsection.43}%
-\contentsline {subsection}{\numberline {3.1.4}Selection Process}{7}{subsection.44}%
-\contentsline {subsection}{\numberline {3.1.5}Data Collection}{7}{subsection.45}%
-\contentsline {section}{\numberline {3.2}Results and Analysis}{7}{section.46}%
-\contentsline {subsection}{\numberline {3.2.1}RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}{7}{subsection.47}%
-\contentsline {subsubsection}{LangChain}{7}{section*.48}%
-\contentsline {paragraph}{Arquitetura}{8}{section*.49}%
-\contentsline {paragraph}{Flexibilidade}{8}{section*.50}%
-\contentsline {paragraph}{Facilidade de utilização}{8}{section*.51}%
-\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{8}{section*.52}%
-\contentsline {paragraph}{Suporte e comunidade}{9}{section*.53}%
-\contentsline {subsubsection}{Haystack}{9}{section*.54}%
-\contentsline {paragraph}{Arquitetura}{9}{section*.55}%
-\contentsline {paragraph}{Flexibilidade}{10}{section*.56}%
-\contentsline {paragraph}{Facilidade de utilização}{10}{section*.57}%
-\contentsline {paragraph}{Integração com bases de dados vetoriais/document stores}{10}{section*.58}%
-\contentsline {paragraph}{Suporte e comunidade}{10}{section*.59}%
-\contentsline {subsubsection}{LlamaIndex}{10}{section*.60}%
-\contentsline {subsubsection}{Spring AI}{10}{section*.61}%
-\contentsline {paragraph}{Arquitetura}{10}{section*.62}%
-\contentsline {paragraph}{Flexibilidade}{11}{section*.63}%
-\contentsline {paragraph}{Facilidade de utilização}{11}{section*.64}%
-\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{12}{section*.65}%
-\contentsline {paragraph}{Suporte e comunidade}{12}{section*.66}%
-\contentsline {subsubsection}{Comparação resumo entre tecnologias}{12}{section*.67}%
-\contentsline {subsection}{\numberline {3.2.2}RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}{14}{subsection.69}%
-\contentsline {subsubsection}{Indexação, recuperação e relevância das respostas}{14}{section*.70}%
-\contentsline {subsubsection}{Integração com Sistemas Existentes}{15}{section*.71}%
-\contentsline {section}{\numberline {3.3}Related Work}{15}{section.72}%
-\contentsline {subsection}{\numberline {3.3.1}RAG chatbot para a OptiMicro Technologies}{15}{subsection.73}%
-\contentsline {subsection}{\numberline {3.3.2}Retrieval Augmented Generation-Based Incident Resolution Recommendation System for IT Support}{16}{subsection.75}%
-\contentsline {subsection}{\numberline {3.3.3}Fabula}{17}{subsection.76}%
-\contentsline {chapter}{Bibliografia}{19}{chapter*.77}%
-\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{21}{appendix.78}%
+\contentsline {section}{\numberline {1.4}Metodologia}{2}{section.20}%
+\contentsline {section}{\numberline {1.5}Planeamento}{3}{section.22}%
+\contentsline {section}{\numberline {1.6}Considerações Éticas}{3}{section.23}%
+\contentsline {section}{\numberline {1.7}Estrutura do Documento}{4}{section.24}%
+\contentsline {chapter}{\numberline {2}Key Concepts}{5}{chapter.25}%
+\contentsline {section}{\numberline {2.1}Artificial Intelligence}{5}{section.26}%
+\contentsline {section}{\numberline {2.2}Machine Learning \& Deep Learning}{5}{section.27}%
+\contentsline {section}{\numberline {2.3}Large Language Models}{5}{section.28}%
+\contentsline {section}{\numberline {2.4}Retrieval-Augmented Generation}{6}{section.29}%
+\contentsline {subsection}{\numberline {2.4.1}Prompt Templates}{6}{subsection.30}%
+\contentsline {subsection}{\numberline {2.4.2}Algoritmos Retriever}{7}{subsection.37}%
+\contentsline {subsection}{\numberline {2.4.3}Processo de indexação}{7}{subsection.38}%
+\contentsline {section}{\numberline {2.5}Bases de Dados Vetoriais}{7}{section.39}%
+\contentsline {section}{\numberline {2.6}Aplicação ao Suporte Técnico}{7}{section.40}%
+\contentsline {chapter}{\numberline {3}State of the Art}{9}{chapter.41}%
+\contentsline {section}{\numberline {3.1}Methodology}{9}{section.42}%
+\contentsline {subsection}{\numberline {3.1.1}Research Questions}{9}{subsection.43}%
+\contentsline {subsection}{\numberline {3.1.2}Research Scope}{9}{subsection.44}%
+\contentsline {subsection}{\numberline {3.1.3}Eligibility Criteria}{9}{subsection.45}%
+\contentsline {subsection}{\numberline {3.1.4}Selection Process}{9}{subsection.46}%
+\contentsline {subsection}{\numberline {3.1.5}Data Collection}{9}{subsection.47}%
+\contentsline {section}{\numberline {3.2}Results and Analysis}{9}{section.48}%
+\contentsline {subsection}{\numberline {3.2.1}RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}{9}{subsection.49}%
+\contentsline {subsubsection}{LangChain}{9}{section*.50}%
+\contentsline {paragraph}{Arquitetura}{10}{section*.51}%
+\contentsline {paragraph}{Flexibilidade}{10}{section*.52}%
+\contentsline {paragraph}{Facilidade de utilização}{10}{section*.53}%
+\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{10}{section*.54}%
+\contentsline {paragraph}{Suporte e comunidade}{11}{section*.55}%
+\contentsline {subsubsection}{Haystack}{11}{section*.56}%
+\contentsline {paragraph}{Arquitetura}{11}{section*.57}%
+\contentsline {paragraph}{Flexibilidade}{12}{section*.58}%
+\contentsline {paragraph}{Facilidade de utilização}{12}{section*.59}%
+\contentsline {paragraph}{Integração com bases de dados vetoriais/document stores}{12}{section*.60}%
+\contentsline {paragraph}{Suporte e comunidade}{12}{section*.61}%
+\contentsline {subsubsection}{LlamaIndex}{12}{section*.62}%
+\contentsline {subsubsection}{Spring AI}{12}{section*.63}%
+\contentsline {paragraph}{Arquitetura}{12}{section*.64}%
+\contentsline {paragraph}{Flexibilidade}{13}{section*.65}%
+\contentsline {paragraph}{Facilidade de utilização}{13}{section*.66}%
+\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{14}{section*.67}%
+\contentsline {paragraph}{Suporte e comunidade}{14}{section*.68}%
+\contentsline {subsubsection}{Comparação resumo entre tecnologias}{14}{section*.69}%
+\contentsline {subsection}{\numberline {3.2.2}RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}{16}{subsection.71}%
+\contentsline {subsubsection}{Indexação, recuperação e relevância das respostas}{16}{section*.72}%
+\contentsline {subsubsection}{Integração com Sistemas Existentes}{17}{section*.73}%
+\contentsline {section}{\numberline {3.3}Trabalhos Relacionados}{17}{section.74}%
+\contentsline {subsection}{\numberline {3.3.1}Análise Individual}{17}{subsection.75}%
+\contentsline {subsubsection}{RAG Chatbot para a OptiMicro Technologies}{17}{section*.76}%
+\contentsline {subsubsection}{Sistema RAG de Recomendação para Suporte Técnico}{18}{section*.78}%
+\contentsline {subsubsection}{Fabula}{19}{section*.80}%
+\contentsline {subsection}{\numberline {3.3.2}Conclusões}{20}{subsection.81}%
+\contentsline {chapter}{Bibliografia}{21}{chapter*.82}%
+\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{23}{appendix.83}%

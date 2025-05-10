@@ -271,11 +271,13 @@ https://arxiv.org/pdf/2409.13707
 https://arxiv.org/pdf/2404.00657
 
 
-\section{Related Work}
+\section{Trabalhos Relacionados}
 
 TODO incluir isto?: Embora o foco desta dissertação seja a aplicação de RAG em contextos de suporte técnico, são também analisados trabalhos em domínios adjacentes quando estes oferecem contributos relevantes em termos de arquitetura, avaliação ou boas práticas.
 
-\subsection{RAG chatbot para a OptiMicro Technologies}
+\subsection{Análise Individual}
+
+\subsubsection{RAG Chatbot para a OptiMicro Technologies}
 
 A OptiMicro, empresa de software Canadiana, decidiu apostar no desenvolvimento de um chatbot utilizando RAG para melhorar o seu serviço de apoio técnico da empresa, mais especificamente no seu serviço DentalWare.
 
@@ -286,7 +288,7 @@ Esta arquitetura encontra-se descrita no diagrama da Figura \ref{fig:opti-micro-
 \begin{figure}[H]
         \centering
         \includegraphics[width=1\linewidth]{ch3/assets/optimicro-arch.png}
-        \caption{Arquitetura do chatbot RAG da OptiMircro \parencite{lee2024development}}
+        \caption{Arquitetura do chatbot RAG da OptiMicro \parencite{lee2024development}}
         \label{fig:opti-micro-arch}
 \end{figure}
 
@@ -298,16 +300,35 @@ Para avaliar o desempenho do chatbot, foram utilizadas 75 questões reais relaci
 TODO ponto negativa deste software: não foi implementado mecanismo para atualizar automaticamente a base de dados vetorial consoante updates na documentação
 
 
-\subsection{Retrieval Augmented Generation-Based Incident Resolution Recommendation System for IT Support} 
+\subsubsection{Sistema RAG de Recomendação para Suporte Técnico} 
 
-TODO discutir este artigo
-ficheiro IT SUPPORT RECOMENDATION.pdf nas transferencias
+\cite{isaza2024retrieval} propuseram um sistema de recomendação para resolução de incidentes em suporte técnico baseado em RAG, com o objetivo de sugerir soluções fundamentadas em documentação.
 
 
-\subsection{Fabula}
+A arquitetura do sistema encontra-se representada na Figura \ref{fig:ticket-recomendation-rag}, sendo composta por cinco etapas principais. A primeira é o pré-processamento, onde certas características do incidente são normalizadas e comparadas com siglas ou nomes alternativos, de forma a melhorar a query de recuperação. Segue-se a classificação de tickets, através do classificador transformer IBM Slate 125m, onde o assunto e a descrição do incidente são analisados para determinar se a sua resolução é viável apenas com a informação fornecida — casos denominados single-turn. Caso o ticket não seja classificado como single-turn, a pipeline termina imediatamente.
+As etapas seguintes consistem na geração de uma query concisa a partir do conteúdo do ticket, seguida da recuperação com reranking, onde são selecionados os três documentos mais relevantes a partir de uma base de dados vetorial Milvus. A resposta final é gerada com base nesses documentos e é acompanhada de links para as fontes consultadas.
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\linewidth]{ch3/assets/ticket-recomendation-rag.png
+        }
+        \caption{Arquitetura do sistema de recomendação de resolução de incidentes proposto por  \cite{isaza2024retrieval}}
+        \label{fig:ticket-recomendation-rag}
+\end{figure}
+
+
+O sistema foi testado em diversos aspetos, quer na geração de queries ou quer na geração da respostas, tendo sido utlizados diferentes LLMs para cada vertente. O modelo Mixtral 8x7B Instruct, que é um LLM fine-tuned para interações dialogadas como chatbots, obteve um BertScore F1 de 0,91 na tarefa de normalizar incidentes em queries concisas, semelhante a LLMs maiores como Falcon-40B, porém com menor custo computacional. Na geração de respostas, este mesmo modelo, combinado com RAG, superou o GPT-4 em métricas como ROUGE-L F1 (0,41 vs. 0,34) e BertScore (0,87 vs. 0,86), destacando a eficienciencia de modelos menores com contexto recuperado. Os autores destacaram também que modelos fine-tuned com infusão de conhecimento técnico, como o modelo InstructLab-IT (7 mil milhões parâmetros), podem superar modelos de grande porte para casos gerais. 
+
+
+
+\subsubsection{Fabula}
 
 ficheiro fabula.pdf nas transferencias
 não é relacionado com IT support mas se calhar é interessante incluir para demonstrar outro caso de uso do RAG e pode dar algum insight util
+
+\subsection{Conclusões}
+
+
 
 
 

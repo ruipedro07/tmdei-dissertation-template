@@ -74,9 +74,53 @@ Explorar Retrieval-augmented generation (RAG) juntamente com Large Language Mode
  - Quarta fase: Implementação da solução.
  - Quinta fase: Testes.
 
-\section{Methodology}
+\section{Metodologia}
 
-\section{Work Plan}
 
-\section{Document Structure}
+A metodologia Design Science Research (DSR) (Figura \ref{fig:dsr}) foi escolhida como quadro orientador para o desenvolvimento deste trabalho. Esta metodologia é particularmente adequada para investigações que visam resolver problemas do mundo real através da criação e avaliação de artefactos inovadores (\cite{peffers2007design}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{ch1/dsr.png}
+\caption{Metodologia DSR (\cite{peffers2007design})}
+\label{fig:dsr}
+\end{figure}
+
+A metodologia DSR é composta por seis etapas, que se relacionam com o presente projeto da seguinte forma:
+
+TODO retificar esta lista no fim do trabalho
+
+\begin{itemize}
+\item \textbf{Identificação e Motivação do Problema:} Foi realizada uma análise aprofundada dos desafios enfrentados pelas equipas de suporte técnico, nomeadamente a dificuldade em aceder rapidamente a informação precisa, a sobrecarga de pedidos repetitivos e a falta de padronização nas respostas.
+\item \textbf{Definição de Objetivos para a Solução:} Com base nos problemas identificados, foram definidos objetivos claros, como a criação de uma solução baseada em RAG que melhore a eficiência do suporte técnico, assegure consistência nas respostas e possibilite a rastreabilidade das fontes de informação utilizadas.
+
+\item \textbf{Desenho e Desenvolvimento:} Foi desenvolvido um protótipo funcional que integra uma arquitetura baseada em *Retrieval-Augmented Generation* com uma LLM, utilizando Spring AI. Este protótipo inclui também uma interface simples para interação e teste por parte dos utilizadores de suporte.
+
+\item \textbf{Demonstração:} A solução foi aplicada a cenários simulados e reais de suporte técnico na área financeira, permitindo validar a sua aplicabilidade em tarefas como a resposta a incidentes, esclarecimento de dúvidas técnicas e recuperação de documentação normativa.
+
+\item \textbf{Avaliação:} O sistema foi avaliado com base em testes de desempenho, testes unitários e de integração, bem como critérios de utilidade, precisão e conformidade com os requisitos regulatórios aplicáveis, incluindo os definidos pelo Banco Central Europeu.
+
+\item \textbf{Comunicação:} Os resultados desta investigação foram documentados nesta dissertação e visam contribuir tanto para o avanço do conhecimento académico na área da IA aplicada ao suporte, como para a melhoria contínua de processos em contexto empresarial.
+
+\end{itemize}
+
+
+
+
+\section{Planeamento}
+
+
+\section{Considerações Éticas}
+
+Esta dissertação respeita o código de ética do Instituto Politécnico do Porto (\cite{codigo_2020}). Em conformidade com o Artigo 2.º, o trabalho observa princípios fundamentais como a legalidade, transparência, responsabilidade, confidencialidade, integridade e honestidade. Adicionalmente, a investigação cumpre as orientações previstas no Artigo 10.º, assegurando os mais elevados padrões de integridade científica, originalidade e verificabilidade.
+
+O plágio e qualquer forma de má conduta académica são rigorosamente evitados, conforme estipulado no Artigo 6.º, nomeadamente na alínea 2.8, que exige a correta citação de todas as fontes. Quaisquer contributos de terceiros ou propriedade intelectual são devidamente creditados, em conformidade com o Artigo 10.º, alínea \textit{e}, que reforça a importância da citação precisa e da distinção relativamente a trabalhos anteriores.
+
+Dado o carácter experimental desta investigação, apenas são utilizados conjuntos de dados e ferramentas com licenciamento explícito que permita a sua utilização académica. Além disso, e de acordo com o Artigo 10.º, alínea \textit{h}, eventuais conflitos de interesse e apoios externos são divulgados de forma transparente.
+
+O conteúdo desta dissertação foi desenvolvido com diligência e rigor, garantindo a reprodutibilidade e a comunicação transparente dos resultados, conforme exigido pelo Artigo 10.º, alínea \textit{g}. Todos os métodos, fontes de dados e ferramentas utilizados nesta dissertação estão totalmente documentados e são publicamente acessíveis, contribuindo assim para uma comunicação científica aberta e transparente.
+
+Por fim, todas as atividades foram realizadas com o devido respeito pelas obrigações éticas e legais no que respeita à privacidade de dados e à propriedade intelectual, conforme estipulado no Artigo 10.º, alínea 2a, e no Artigo 9.º, assegurando a segurança, bem-estar e os direitos de todos os participantes envolvidos.
+
+\section{Estrutura do Documento}
 

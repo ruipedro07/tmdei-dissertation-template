@@ -58,6 +58,24 @@ Com a introdução do LangChain Expression Language (LCEL), passou a ser possív
 	\item \textit{create\_retrieval\_chain}: Integra recuperação de documentos relevantes com geração de respostas por LLM.
 \end{itemize}
 
+\subsection{Prompt Templates} TODO retificar esta subsection
+
+São usados para guiar as repostas do modelo reproduzindo um PromptValue. Este é o resultado final da intrução a ser transmitida ao LLM assim que o input do utilizador for executado em cima do template. São importantes pois direcionam a instrução para a obtenção de respostas que vão de em contra ao objetivo da aplicação. 
+
+
+\begin{lstlisting}[language=Python, caption={Using LangChain to create a prompt template}, label={lst:joke-prompt}]
+from langchain_core.prompts import PromptTemplate
+
+prompt_template = PromptTemplate.from_template("Tell me a joke about {topic}")
+
+prompt_template.invoke({"topic": "cats"})
+\end{lstlisting}
+
+No contexto de uma aplicação para contar anedotas (\ref{lst:joke-prompt}), apenas com a especificação do tema da anedota, neste caso gatos, o template cria o PromptValue "Tell me a joke about cats"  a ser executado pelo LLM.
+
+
+https://python.langchain.com/docs/concepts/prompt\_templates/
+
 
 \paragraph{Flexibilidade}
 

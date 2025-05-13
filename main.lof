@@ -2,7 +2,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Metodologia DSR (\blx@tocontentsinit {0}\cite {peffers2007design})}}{2}{figure.caption.21}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitetura simplificada do RAG - https://medium.com/@sahin.samia/what-is-retrieval-augmented-generation-rag-in-llm-and-how-it-works-a8c79e35a172}}{8}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitetura do chatbot RAG da OptiMicro \blx@tocontentsinit {0}\parencite {lee2024development}}}{18}{figure.caption.77}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura do sistema de recomendação de resolução de incidentes proposto por \blx@tocontentsinit {0}\cite {isaza2024retrieval}}}{19}{figure.caption.79}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitetura do chatbot RAG da OptiMicro \blx@tocontentsinit {0}\parencite {lee2024development}}}{20}{figure.caption.83}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura do sistema de recomendação de resolução de incidentes proposto por \blx@tocontentsinit {0}\cite {isaza2024retrieval}}}{21}{figure.caption.85}%
 \addvspace {10\p@ }

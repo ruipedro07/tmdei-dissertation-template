@@ -19,12 +19,12 @@
 \contentsline {section}{\numberline {2.4}Fine-tuning LLMs}{7}{section.29}%
 \contentsline {section}{\numberline {2.5}Retrieval-Augmented Generation}{7}{section.30}%
 \contentsline {subsection}{\numberline {2.5.1}Arquitetura}{7}{subsection.31}%
-\contentsline {subsection}{\numberline {2.5.2}Persistência do Contexto}{8}{subsection.33}%
+\contentsline {subsection}{\numberline {2.5.2}Representação e Armazenamento do Conhecimento}{8}{subsection.33}%
 \contentsline {subsubsection}{Bases de Dados Vetoriais}{8}{section*.34}%
-\contentsline {subsection}{\numberline {2.5.3}Recuperação do Contexto}{8}{subsection.35}%
-\contentsline {subsection}{\numberline {2.5.4}Geração do Input LLM}{8}{subsection.36}%
-\contentsline {subsection}{\numberline {2.5.5}Prompt Engineering}{8}{subsection.37}%
-\contentsline {subsection}{\numberline {2.5.6}Aplicações Práticas}{8}{subsection.38}%
+\contentsline {subsection}{\numberline {2.5.3}Recuperação do Conhecimento}{8}{subsection.35}%
+\contentsline {subsection}{\numberline {2.5.4}Augmentation}{8}{subsection.36}%
+\contentsline {subsubsection}{Prompt Engineering}{8}{section*.37}%
+\contentsline {subsection}{\numberline {2.5.5}Aplicações Práticas}{8}{subsection.38}%
 \contentsline {section}{\numberline {2.6}Aplicação ao Suporte Técnico}{9}{section.39}%
 \contentsline {chapter}{\numberline {3}State of the Art}{11}{chapter.40}%
 \contentsline {section}{\numberline {3.1}Methodology}{11}{section.41}%

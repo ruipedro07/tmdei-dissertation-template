@@ -36,34 +36,19 @@
 \contentsline {section}{\numberline {3.2}Results and Analysis}{11}{section.47}%
 \contentsline {subsection}{\numberline {3.2.1}RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}{11}{subsection.48}%
 \contentsline {subsubsection}{LangChain}{11}{section*.49}%
-\contentsline {paragraph}{Arquitetura}{12}{section*.50}%
-\contentsline {subsection}{\numberline {3.2.2}Prompt Templates}{12}{subsection.51}%
-\contentsline {paragraph}{Flexibilidade}{12}{section*.58}%
-\contentsline {paragraph}{Facilidade de utilização}{13}{section*.59}%
-\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{13}{section*.60}%
-\contentsline {paragraph}{Suporte e comunidade}{13}{section*.61}%
-\contentsline {subsubsection}{Haystack}{13}{section*.62}%
-\contentsline {paragraph}{Arquitetura}{13}{section*.63}%
-\contentsline {paragraph}{Flexibilidade}{14}{section*.64}%
-\contentsline {paragraph}{Facilidade de utilização}{14}{section*.65}%
-\contentsline {paragraph}{Integração com bases de dados vetoriais/document stores}{14}{section*.66}%
-\contentsline {paragraph}{Suporte e comunidade}{14}{section*.67}%
-\contentsline {subsubsection}{LlamaIndex}{15}{section*.68}%
-\contentsline {subsubsection}{Spring AI}{15}{section*.69}%
-\contentsline {paragraph}{Arquitetura}{15}{section*.70}%
-\contentsline {paragraph}{Flexibilidade}{15}{section*.71}%
-\contentsline {paragraph}{Facilidade de utilização}{16}{section*.72}%
-\contentsline {paragraph}{Integração com bases de dados vetoriais e document stores}{16}{section*.73}%
-\contentsline {paragraph}{Suporte e comunidade}{16}{section*.74}%
-\contentsline {subsubsection}{Comparação resumo entre tecnologias}{16}{section*.75}%
-\contentsline {subsection}{\numberline {3.2.3}RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}{18}{subsection.77}%
-\contentsline {subsubsection}{Indexação, recuperação e relevância das respostas}{18}{section*.78}%
-\contentsline {subsubsection}{Integração com Sistemas Existentes}{19}{section*.79}%
-\contentsline {section}{\numberline {3.3}Trabalhos Relacionados}{19}{section.80}%
-\contentsline {subsection}{\numberline {3.3.1}Análise Individual}{19}{subsection.81}%
-\contentsline {subsubsection}{RAG Chatbot para a OptiMicro Technologies}{19}{section*.82}%
-\contentsline {subsubsection}{Sistema RAG de Recomendação para Suporte Técnico}{20}{section*.84}%
-\contentsline {subsubsection}{Fabula}{21}{section*.86}%
-\contentsline {subsection}{\numberline {3.3.2}Conclusões}{22}{subsection.87}%
-\contentsline {chapter}{Bibliografia}{23}{chapter*.88}%
-\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{25}{appendix.89}%
+\contentsline {subsection}{\numberline {3.2.2}Prompt Templates}{12}{subsection.50}%
+\contentsline {subsubsection}{Haystack}{13}{section*.57}%
+\contentsline {subsubsection}{LlamaIndex}{14}{section*.58}%
+\contentsline {subsubsection}{Spring AI}{14}{section*.59}%
+\contentsline {subsubsection}{Comparação resumo entre tecnologias}{16}{section*.60}%
+\contentsline {subsection}{\numberline {3.2.3}RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}{18}{subsection.62}%
+\contentsline {subsubsection}{Indexação, recuperação e relevância das respostas}{18}{section*.63}%
+\contentsline {subsubsection}{Integração com Sistemas Existentes}{19}{section*.64}%
+\contentsline {section}{\numberline {3.3}Trabalhos Relacionados}{19}{section.65}%
+\contentsline {subsection}{\numberline {3.3.1}Análise Individual}{19}{subsection.66}%
+\contentsline {subsubsection}{RAG Chatbot para a OptiMicro Technologies}{19}{section*.67}%
+\contentsline {subsubsection}{Sistema RAG de Recomendação para Suporte Técnico}{20}{section*.69}%
+\contentsline {subsubsection}{Fabula}{21}{section*.71}%
+\contentsline {subsection}{\numberline {3.3.2}Conclusões}{22}{subsection.72}%
+\contentsline {chapter}{Bibliografia}{23}{chapter*.73}%
+\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{25}{appendix.74}%

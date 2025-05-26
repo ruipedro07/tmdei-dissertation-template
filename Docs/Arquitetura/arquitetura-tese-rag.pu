@@ -1,0 +1,62 @@
+@startuml
+skinparam packageStyle rectangle
+skinparam componentStyle uml2
+
+actor "Support User" as User
+actor "Support Manager" as Manager
+
+package "Frontend" {
+  [Portal de Administração] as AdminPortal
+  [Chatbot UI] as ChatUI
+}
+
+package "Backend Spring AI" {
+  [RAG Orchestrator Service] as RAG
+  [Chatbot Service] as ChatBot
+  [Document Manager Service] as DocManager
+  [Extractor Service <<cron>>] as Extract
+  [External Trigger Service <<cron>>] as Trigger
+}
+
+package "Sources of Knowledge" {
+  [Confluence API] as Confluence
+
+}
+
+package "External Trigger" {
+  [Outlook API] as Outlook
+  [Control-M API] as ControlM
+}
+
+package "Storage" {
+  [Vector Store] as VectorDB
+}
+
+package "AI" {
+  [LLM Model] as LLM
+  [Embedding Model] as EMB
+}
+
+
+User --> ChatUI : Usa chatbot
+Manager --> AdminPortal : Acede ao portal
+ChatUI ---> ChatBot: Envia questões
+RAG --> VectorDB : Consulta embeddings
+ChatBot ...> ChatUI : Resposta
+RAG --> LLM : Executa consultas
+RAG --> EMB : Fase de Retrieval
+
+
+
+AdminPortal ---> DocManager : Injeta documentos / controla indexação
+DocManager --> VectorDB : Atualiza embeddings
+DocManager ---> EMB : Utiliza modelo para gerar novos embeddings
+
+Extract --> Confluence : Extrai documentação
+Extract --> DocManager : Envia dados extraídos
+
+ChatBot --> RAG
+Trigger --> RAG
+
+
+@enduml

@@ -90,8 +90,10 @@
       \strng{authornamehash}{4bbb131bd6e49da337d3488ffff151ab}
       \strng{authorfullhash}{624d5bbd831585b1fb09a60d55e508d0}
       \strng{authorfullhashraw}{624d5bbd831585b1fb09a60d55e508d0}
+      \field{extraname}{1}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -104,6 +106,89 @@
       \verb{url}
       \verb https://arxiv.org/abs/2409.13707
       \endverb
+    \endentry
+    \entry{isaza2024retrieval}{article}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=b170428b0dc0d06424856c61c0d43a0b}{%
+           family={Isaza},
+           familyi={I\bibinitperiod},
+           given={Paulina\bibnamedelima Toro},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=769b7a98350ae14e8ae96e91f1b553f5}{%
+           family={Nidd},
+           familyi={N\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=253f551ca21d105e44027106ae68f38a}{%
+           family={Zheutlin},
+           familyi={Z\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d96d8cdf53d00e779e49a17db0751c6}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Jae-wook},
+           giveni={J\bibinithyphendelim w\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46775dc0084406264ce5ad6ae91350b4}{%
+           family={Bhatt},
+           familyi={B\bibinitperiod},
+           given={Chidansh\bibnamedelima Amitkumar},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d8b6548edf7f293d0d08a8a4662cd40}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4e5000b7db9b318cc438beb1f197d3e}{%
+           family={Mahindru},
+           familyi={M\bibinitperiod},
+           given={Ruchi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5441f66f51249100545f3eff6b64852a}{%
+           family={Franz},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=24a7be415183a74a2f6ffc999ac3f860}{%
+           family={Florian},
+           familyi={F\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcdf7cf3f3cfe87d0f08f8f4d98b1137}{%
+           family={Roukos},
+           familyi={R\bibinitperiod},
+           given={Salim},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4bbb131bd6e49da337d3488ffff151ab}
+      \strng{fullhash}{624d5bbd831585b1fb09a60d55e508d0}
+      \strng{fullhashraw}{624d5bbd831585b1fb09a60d55e508d0}
+      \strng{bibnamehash}{4bbb131bd6e49da337d3488ffff151ab}
+      \strng{authorbibnamehash}{4bbb131bd6e49da337d3488ffff151ab}
+      \strng{authornamehash}{4bbb131bd6e49da337d3488ffff151ab}
+      \strng{authorfullhash}{624d5bbd831585b1fb09a60d55e508d0}
+      \strng{authorfullhashraw}{624d5bbd831585b1fb09a60d55e508d0}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2409.13707}
+      \field{title}{Retrieval Augmented Generation-Based Incident Resolution Recommendation System for IT Support}
+      \field{year}{2024}
     \endentry
     \entry{lee2024development}{inproceedings}{}{}
       \name{author}{5}{}{%
@@ -203,7 +288,8 @@
   \enddatalist
   \missing{RAGDoesNotWork2024}
   \missing{SevenPoints2024}
-  \missing{fig:opti-micro-arch}
+  \missing{codigo_2020}
+  \missing{peffers2007design}
 \endrefsection
 \endinput
 

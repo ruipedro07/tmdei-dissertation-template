@@ -45,7 +45,6 @@ Antes de apresentar cada tecnologia, importa referir que as informações aqui d
 
 Fundada por Harrison Chase em 2022, LangChain é uma framework open-source para o desenvolvimento de aplicações que integram LLMs com fontes externas de dados e ferramentas de software. Está disponível em Python e JavaScript, oferecendo um ambiente centralizado e altamente extensível para construir soluções com LLMs de forma modular e reutilizável.
 
-\paragraph{Arquitetura}
 
 A arquitetura do LangChain é baseada no conceito de \textit{Chains}, que representam sequências de chamadas a LLMs e a outras ferramentas auxiliares. Estas \textit{Chains} podem ser compostas de forma modular, permitindo construir fluxos de execução complexos com facilidade.
 
@@ -77,27 +76,23 @@ No contexto de uma aplicação para contar anedotas (\ref{lst:joke-prompt}), ape
 https://python.langchain.com/docs/concepts/prompt\_templates/
 
 
-\paragraph{Flexibilidade}
-
 LangChain é uma das frameworks mais flexíveis atualmente disponíveis. A sua estrutura modular permite criar soluções para diversos domínios — desde sistemas de chat com memória contextual até agentes com raciocínio multi-etapas e integração com APIs externas. Suporta LLMs de múltiplos fornecedores, incluindo:
 
 \begin{itemize} \item OpenAI (via API Key) \item Cohere \item Anthropic (Claude) \item Modelos open-source (como LLaMA, Flan-T5, Mistral, etc.) via Hugging Face \end{itemize}
 
 Os componentes podem ser combinados e substituídos livremente, o que torna o LangChain altamente adaptável a diferentes arquiteturas e necessidades de negócio.
 
-\paragraph{Facilidade de utilização}
+
 
 A curva de aprendizagem do LangChain pode ser ligeiramente acentuada devido à grande variedade de conceitos e componentes disponíveis. No entanto, a documentação é abrangente e inclui exemplos práticos, tutoriais e guias para casos de uso comuns.
 
 O LCEL veio simplificar bastante o processo de criação de pipelines, ao permitir a definição declarativa de fluxos sem necessidade de escrita de código imperativo detalhado. Ainda assim, o domínio completo da framework pode exigir tempo, especialmente na fase de composição de agentes ou integração de ferramentas externas.
 
-\paragraph{Integração com bases de dados vetoriais e document stores}
 
 LangChain disponibiliza integração nativa com diversos sistemas de armazenamento de documentos, tanto tradicionais como vetoriais, tais como Elasticsearch e Weaviate, duas tecnologias open-source que permitem pesquisa vetorial, armazenamento de embeddings e indexação de documentos.
 
 Estes sistemas são acedidos através de abstrações como \texttt{VectorStoreRetriever} e \texttt{DocumentLoaders}, que permitem a configuração e adaptação do processo de indexação e recuperação de informação de acordo com os requisitos específicos da aplicação.
 
-\paragraph{Suporte e comunidade}
 
 LangChain possui uma comunidade ativa e em crescimento, com elevado dinamismo no repositório GitHub, contanto com mais de cem mil estrelas. A empresa responsável pelo projeto, tem promovido o desenvolvimento contínuo da framework, bem como o lançamento de ferramentas complementares como o LangSmith, destinado à monitorização e depuração de aplicações baseadas em LLMs. Esta vitalidade comunitária traduz-se em documentação continuamente atualizada, partilha regular de boas práticas e integração frequente de contributos externos.
 
@@ -117,7 +112,6 @@ https://python.langchain.com/v0.1/docs/modules/chains/
 
 Haystack é uma framework open-source desenvolvida pela empresa alemã Deepset, com o objetivo de facilitar a construção de pipelines baseadas em LLMs, especialmente para casos de uso como RAG, question answering, classificação, extração de informação e pesquisa semântica em documentos. A linguagem principal utilizada é Python. A primeira versão surgiu em 2020, tendo recentemente evoluído para a versão 2.0, com uma reformulação completa da sua arquitetura.
 
-\paragraph{Arquitetura}
 
 A principal inovação do Haystack 2.0 é a sua arquitetura orientada a componentes. Cada componente representa uma unidade funcional independente, com responsabilidade bem definida dentro de uma pipeline. Estes componentes são combinados de forma declarativa para formar pipelines personalizadas, robustas e escaláveis. Entre os tipos de componentes disponíveis encontram-se:
 
@@ -125,19 +119,16 @@ A principal inovação do Haystack 2.0 é a sua arquitetura orientada a componen
 
 As pipelines podem ser definidas em ficheiros YAML ou diretamente em Python, promovendo flexibilidade tanto para utilizadores técnicos como não técnicos.
 
-\paragraph{Flexibilidade}
 
 Haystack destaca-se pela sua grande flexibilidade. A arquitetura baseada em componentes independentes permite a substituição e reconfiguração de cada etapa do fluxo de processamento, facilitando a adaptação a diferentes domínios, fontes de dados e estratégias de interação com LLMs. Os desenvolvedores podem ainda combinar múltiplos retrievers, utilizar lógica condicional com routers e integrar diversos serviços externos com relativa facilidade.
 
-\paragraph{Facilidade de utilização}
+
 
 A curva de aprendizagem do Haystack pode ser moderada, especialmente para utilizadores que não estejam familiarizados com conceitos como pipelines declarativas ou integração com serviços externos. No entanto, a documentação oficial é bastante completa e a existência de pipelines pré-configuradas — como a \texttt{PredefinedPipeline.INDEXING} e a \texttt{PredefinedPipeline.RAG} — facilita bastante o início do desenvolvimento. Estas permitem, respetivamente, indexar documentos e realizar tarefas de RAG com configuração mínima.
 
-\paragraph{Integração com bases de dados vetoriais/document stores}
 
 Haystack oferece suporte nativo a várias tecnologias de armazenamento de documentos, como Elasticsearch e Weaviate, referidos anteriormente. Em ambiente de desenvolvimento, o Haystack oferece o InMemoryDocumentStore, uma opção lightweight que armazena os documentos diretamente em memória, sendo ideal para testes.
 
-\paragraph{Suporte e comunidade}
 
 Haystack possui uma comunidade ativa. O repositório oficial no GitHub conta com mais de vinte mil estrelas (TODO referencia github), issues frequentemente respondidas, e releases regulares. A documentação é extensa, com guias, tutoriais e exemplos práticos.
 
@@ -161,7 +152,6 @@ TODO
 
 Spring AI é uma framework recente, disponibilizada publicamente no início de 2024, com o objetivo de simplificar o desenvolvimento de aplicações baseadas em inteligência artificial, especialmente no ecossistema Java. Inspirado por projetos como LangChain e LlamaIndex, o Spring AI surge como uma extensão natural do ecossistema Spring, promovendo a integração de LLMs em aplicações corporativas de forma modular, acessível e escalável.
 
-\paragraph{Arquitetura}
 
 A arquitetura do Spring AI é orientada a componentes e organizada em torno do conceito de \emph{Advisors}, responsáveis por encapsular diferentes estratégias de interação com LLMs e bases de dados vetoriais. A framework disponibiliza dois tipos principais de \textit{advisors} para fluxos RAG:
 
@@ -181,7 +171,6 @@ Adicionalmente, a framework estrutura os fluxos de processamento em módulos reu
 
 Esta abordagem modular facilita a composição e manutenção de pipelines RAG personalizadas.
 
-\paragraph{Flexibilidade}
 
 Apesar de ser uma framework emergente, o Spring AI apresenta uma estrutura suficientemente flexível para acomodar diversos casos de uso. A separação clara entre módulos permite que cada fase do pipeline seja configurada ou substituída conforme os requisitos específicos da aplicação.
 
@@ -189,7 +178,6 @@ A framework suporta múltiplos provedores de LLMs, incluindo OpenAI, Hugging Fac
 
 Por estar profundamente integrado com o ecossistema Spring, a framework beneficia de recursos como injeção de dependências, configuração centralizada, gestão de contexto e integração com outras soluções do universo Spring Boot, o que a torna especialmente atrativa para ambientes corporativos baseados em Java.
 
-\paragraph{Facilidade de utilização}
 
 Um dos principais objetivos do Spring AI é tornar a utilização de LLMs mais acessível a programadores do ecossistema Java. A framework herda a familiaridade e consistência do paradigma Spring, oferecendo uma experiência previsível e bem documentada.
 
@@ -197,7 +185,6 @@ Os \textit{advisors} e módulos podem ser facilmente instanciados e configurados
 
 Contudo, como se trata de uma framework ainda em evolução, podem existir limitações ao nível de abstrações mais avançadas quando comparada com alternativas mais consolidadas no ecossistema Python.
 
-\paragraph{Integração com bases de dados vetoriais e document stores}
 
 O Spring AI oferece integração nativa com várias bases de dados vetoriais, através da abstração \texttt{VectorStore}. Atualmente, estão disponíveis conectores para:
 
@@ -207,7 +194,6 @@ Estes armazenamentos vetoriais podem ser utilizados diretamente nos módulos de 
 
 A framework prevê ainda a evolução para incluir mecanismos mais elaborados de pré-processamento de documentos, nomeadamente para segmentação, limpeza e enriquecimento semântico dos conteúdos.
 
-\paragraph{Suporte e comunidade}
 
 Dado o seu lançamento recente, a comunidade do Spring AI ainda se encontra em crescimento. No entanto, beneficia do forte ecossistema da Spring Framework e da extensa base de utilizadores da comunidade Java. O projeto é mantido pela equipa oficial da Spring, o que garante qualidade no design, documentação consistente e ciclos de lançamento regulares.
 
@@ -275,6 +261,7 @@ Essa falha é confirmada por \textcite{SevenPoints2024}, que identificaram múlt
 Diversas técnicas de Finetunning podem ser utilizadas para contornar estas situações.
 
 TODO melhorar daqui para baixo
+
 Contextos maiores geram respostas mais precisas. A inclusão de metadados, como o nome do ficheiro e número do chunk, melhora a interpretação da informação recuperada. Modelos de embeddings open source também se mostram eficazes, especialmente em textos curtos. Para garantir resultados robustos, é essencial calibrar cuidadosamente o pipeline RAG — incluindo chunking, embeddings, recuperação e consolidação — além de manter uma monitorização contínua, dado que o sistema lida com entradas desconhecidas em tempo real.
 
 

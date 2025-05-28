@@ -22,6 +22,7 @@
 | RF02 | Deve existir um portal de administração para que utilizadores com privilégios possam injetar e gerir documentação manualmente. | - A injeção automática deve aceitar ficheiros nos formatos: **PDF**, **Markdown**, **TXT** e **Word**. |
 | RF03 | O sistema deve executar um processo automático para extrair, indexar e armazenar documentação atualizada. | - O processo de extração, indexação e armazenamento deve ser **diário** e **automático**. |
 | RF04 | O portal de administração deve permitir controlo sobre o processo de extração automática. | - Deve existir um sistema de **exclusão de documentos** com base em **keywords** ou **metadados específicos** (nome, link, etc). <br> - Deve ser possível configurar quais **fontes de extração** serão utilizadas. <br> - Deve ser possível definir o **intervalo de inclusão**, como por exemplo um **space específico no Confluence**. |
+| RF05 | O sistema deve ter um modulo de autorização / autenticação para limitar acessos a cada tipo de utilizador, Support User ou Support Manager |  |
 
 
 ## 4. Requisitos Não Funcionais

@@ -4,43 +4,160 @@
 \label{chap:Chapter3} 
 
 %----------------------------------------------------------------------------------------
-\section{Methodology}
+\section{Metodologia}
 
-\subsection{Research Questions}
+\subsection{Questões de Investigação}
 
-RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?
+RQ1 - Quais os conceitos fundamentais do RAG?
 
 RQ2 - Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?
 
+RQ3 - Quais as melhores práticas de recuperação do conhecimento e como os modelos de embeddings influenciam nesse processo?
 
-
-RQ3 - Quais as melhores práticas para a indexação e recuperação de dados? 
-
-
-RQ4 - Qual a LLM mais adequada para uso de RAG para suporte técnico? 
-
-
+RQ4 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?
 
 
 \subsection{Research Scope}
 
-\subsection{Eligibility Criteria}
+\subsection{Critérios de Inclusão e Exclusão}
 
 
-\subsection{Selection Process}
+\subsection{Processo de Seleção}
 
-\subsection{Data Collection}
-
-\section{Results and Analysis}
+\subsection{Coleção de Dados}
 
 
+\section{Conceitos Fundamentais do RAG (RQ1)}
 
-\subsection{RQ1 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?}
+
+Apesar dos avanços dos LLMs, estes modelos enfrentam limitações em ambientes onde o acesso a conhecimento atualizado ao contexto é crucial. A técnica de fine-tuning abordada anteriormente é dispendiosa e não escala bem para conteúdos em constante mudança. Retrieval-Augmented Generation (RAG) surge como uma solução alternativa, permitindo enriquecer a geração com acesso em tempo real a fontes externas.
+
+RAG é uma técnica que combina LLMs com um mecanismo de recuperação de informação externa. Enquanto que os LLMs apenas se baseiam em dados pré-treinados, o RAG recupera informação relevante de um contexto específico armazenado previamente.
+
+Tendo em consideração que RAG é a peça fundamental de estudo do presente documento, nesta secção serão abordados todos os seus conceitos mais importantes.
+
+\subsection{Arquitetura}
+
+
+O fluxo típico do RAG encontra-se descrito na Figura \ref{fig:acrh-rag}. Em primeira instancia, o processo consiste na formulação de uma questão (\textit{query}) a ser requisitada ao sistema. De seguida, os processos de  Retrieval, Augmentation e Generation ocorrem de forma sequencial: 
+
+
+\begin{itemize}
+    \item \textbf{Retrieval}: Baseado na \textit{query}, a função do \textit{Retriever} é percorrer o conhecimento disponível e encontrar informação que vá de encontro a essa \textit{query}. Funciona como uma espécie de motor de busca e é essencial pois determina a relavância e qualidade da informação que será usada para gerar a resposta final. O métodos de recuperação serão discutidos na secção \ref{recu-context}.
+    \item \textbf{Augmentation}: Através da \textit{query} inicial e da informação recuperada no passo anterior, o processo de \textit{augmentation} consiste na elaboração do \textit{prompt} enriquecido com a informação contextual. Este \textit{prompt} irá conter essa informação com objetivo aumentar o nível de precisão da resposta. Nesta fase, através de Prompt Engineering, é possível manipular o \textit{prompt} de diversas formas, tal como por exemplo a definição da linguagem de resposta, nivel de formalidade ou algum detalhe mais específico. Este processo será analisado em detalhe na secção \ref{augmentation}.
+    \item \textbf{Generation}: Consiste na chamada ao LLM e geração da resposta através do input \textit{prompt} formulado no passo anterior. O conhecimento pré-existente é tido em conta pelo LLM permitindo que as respostas sejam mais inteligentes e informadas para o contexto em questão. 
+\end{itemize}
+
+
+
+https://medium.com/@sandyeep70/understanding-rag-evolution-components-implementation-and-applications-ecf72b778d15
+
+
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{ch2/assets/RAG-ach-2.png
+        }
+        \caption{Arquitetura simplificada do RAG - https://medium.com/@sahin.samia/what-is-retrieval-augmented-generation-rag-in-llm-and-how-it-works-a8c79e35a172}
+        \label{fig:acrh-rag}
+\end{figure}
+
+
+\subsection{Representação e Armazenamento do Conhecimento}
+
+melhor prática de representação do conhecimento: embeddings : https://arxiv.org/pdf/2407.09252
+
+melhor prática de armazenamento: bases de dados vetoriais: https://arxiv.org/pdf/2407.01219
+
+
+\subsubsection{Bases de Dados Vetoriais}
+
+TODO
+
+Conceito de embeddings e busca vetorial.
+Exemplos de ferramentas (FAISS, Weaviate, Pinecone).<
+Importância da base vetorial no contexto do RAG.
+
+
+
+
+\subsection{Recuperação do Conhecimento}
+\label{recu-context}
+
+TODO modelos retriever
+TODO tipo isto https://docs.llamaindex.ai/en/stable/examples/retrievers/bm25_retriever/
+
+
+\subsection{Augmentation}
+\label{augmentation}
+
+input: Query + documentos recuperados
+output: Prompt enriquecido
+
+TODO
+
+\subsubsection{Prompt Engineering}
+
+TODO
+
+\subsection{Aplicações Práticas}
+
+TODO 
+
+RAG é atualmente usado, por exemplo, para suporte ao consumidor através da criação de Chatbots capazes de recuperar FAQs e o conhecimento do negócio de forma fácil. Gestão do conhecimento empresarial é outro exemplo de caso de uso, pois permite que os funcionários recuperarem e acedam a informação do contexto de trabalho de forma mais rápida. Este último caso de uso vai de encontro aos objetivos do presente projeto. 
+
+
+
+
+\section{Desafios Técnicos na Implementação (RQ2)}
+
+
+\subsection{Indexação, recuperação e relevância das respostas}
+
+A eficiência do RAG depende da capacidade de recuperar documentação relevante. No contexto de suporte técnico, a recuperação necessita ser precisa para fornecer soluções corretas o que é desafiador devido à complexidade e especificidade da documentação \parencite{ToroIsaza2024}.
+
+
+No que toca recuperação por similaridades semanticas, \cite{soman2024observations} refere que o uso de embeddings para chunks de texto grandes (> 200 palavras) resulta em valores de similaridade artificialmente altos. Isso sugere que, mesmo quando as frases não são semanticamente parecidas, o modelo acha que são, apenas por serem longas. Contudo, documentação que usa grande número de abreviações e paragrafos para um tópico tornanam as obeservações mais relevantes. Além disso, concluiu-se palavras-chave mais próximas do começo de de uma frase são recuperadas com maior precisão.
+
+Adicionalmente, estudos recentes revelam que sistemas RAG apresentam dificuldades significativas quando aplicados em ambientes empresariais. \textcite{RAGDoesNotWork2024} demonstram que, mesmo quando a resposta correta está presente no contexto, o sistema frequentemente falha em recuperá-la. Isso ocorre, em parte, devido ao desajuste entre a estrutura dos documentos técnicos (como FAQs, procedimentos, logs, etc.) e as estratégias tradicionais de segmentação em chunks.
+
+Essa falha é confirmada por \textcite{SevenPoints2024}, que identificaram múltiplos pontos críticos no funcionamento de sistemas RAG, incluindo:
+
+\begin{itemize}
+    \item Falta de conteúdo: Quando a informação necessária não está no contexto, o sistema pode responder com conteúdos enganosos, sugerindo que sabe a resposta mesmo sem dados de apoio.
+    \item Fraca classificação da documentação: Mesmo com a informação presente no contexto, ela pode não ser corretamente classificada e consequentemente não recuperada. 
+ \item Informação não extraida: Caso haja informações contraditórias no contexto, o retriever pode apresentar falhas.
+  \item Especificidade incorreta: O sistema pode gerar respostas muito vagas ou excessivamente específicas sem compreender especificamente o que foi solicitado.
+\end{itemize}
+
+Diversas técnicas de Finetunning podem ser utilizadas para contornar estas situações.
+
+TODO melhorar daqui para baixo
+
+Contextos maiores geram respostas mais precisas. A inclusão de metadados, como o nome do ficheiro e número do chunk, melhora a interpretação da informação recuperada. Modelos de embeddings open source também se mostram eficazes, especialmente em textos curtos. Para garantir resultados robustos, é essencial calibrar cuidadosamente o pipeline RAG — incluindo chunking, embeddings, recuperação e consolidação — além de manter uma monitorização contínua, dado que o sistema lida com entradas desconhecidas em tempo real.
+
+
+
+\subsection{Integração com Sistemas Existentes}
+
+
+
+
+https://arxiv.org/pdf/2409.13707
+
+https://arxiv.org/pdf/2404.00657
+
+
+
+
+\section{Melhores Práticas na Recuperação do Conhecimento (RQ3)}
+
+\section{Frameworks para Desenvolvimento de RAG (RQ4)}
 
 Antes de apresentar cada tecnologia, importa referir que as informações aqui descritas foram obtidas com base na respetiva documentação oficial disponível nos websites de cada projeto. Nesta análise, cada framework será avaliada segundo três critérios: (i) arquitetura, (ii) flexibilidade e (iii) facilidade de utilização. Adicionalmente, serão também consideradas as formas de integração com bases de dados externas (vector stores ou document stores), bem como o suporte e comunidade em torno de cada projeto.
 
 
-\subsubsection{LangChain}
+\subsection{LangChain}
 
 
 Fundada por Harrison Chase em 2022, LangChain é uma framework open-source para o desenvolvimento de aplicações que integram LLMs com fontes externas de dados e ferramentas de software. Está disponível em Python e JavaScript, oferecendo um ambiente centralizado e altamente extensível para construir soluções com LLMs de forma modular e reutilizável.
@@ -107,7 +224,7 @@ https://python.langchain.com/v0.1/docs/modules/chains/
 
 
 
-\subsubsection{Haystack}
+\subsection{Haystack}
 
 
 Haystack é uma framework open-source desenvolvida pela empresa alemã Deepset, com o objetivo de facilitar a construção de pipelines baseadas em LLMs, especialmente para casos de uso como RAG, question answering, classificação, extração de informação e pesquisa semântica em documentos. A linguagem principal utilizada é Python. A primeira versão surgiu em 2020, tendo recentemente evoluído para a versão 2.0, com uma reformulação completa da sua arquitetura.
@@ -141,13 +258,13 @@ https://docs.haystack.deepset.ai/docs/pipeline-templates
 
 
 
-\subsubsection{LlamaIndex}
+\subsection{LlamaIndex}
 
 TODO
 
 
 
-\subsubsection{Spring AI}
+\subsection{Spring AI}
 
 
 Spring AI é uma framework recente, disponibilizada publicamente no início de 2024, com o objetivo de simplificar o desenvolvimento de aplicações baseadas em inteligência artificial, especialmente no ecossistema Java. Inspirado por projetos como LangChain e LlamaIndex, o Spring AI surge como uma extensão natural do ecossistema Spring, promovendo a integração de LLMs em aplicações corporativas de forma modular, acessível e escalável.
@@ -200,7 +317,7 @@ Dado o seu lançamento recente, a comunidade do Spring AI ainda se encontra em c
 A documentação oficial cobre os principais casos de uso, e já existem exemplos práticos disponíveis em repositórios públicos que demonstram a aplicação da framework em pipelines RAG.
 
 
-\subsubsection{Comparação resumo entre tecnologias}
+\subsection{Comparação resumo entre tecnologias}
 
 
 Para resumir, na Tabela \ref{tab:tec-comp} estão descritos os principais pontos de comparação entre as diferentes tecnologias analisadas. 
@@ -235,46 +352,6 @@ Todas as ferramentas analisadas oferecem integração com sistemas de armazename
 Por fim, no que respeita a suporte e comunidade, LangChain e Haystack apresentam ecossistemas consolidados, com documentação extensa, comunidades ativas e evolução contínua — refletido na Tabela \ref{tab:tec-comp} com os níveis \textbf{++} e \textbf{+++}, respetivamente. O Spring AI, embora ainda em fase de maturação, conta com documentação estruturada e o respaldo da comunidade Spring, o que lhe confere um nível \textbf{+} na escala adotada, indicando um bom ponto de partida com potencial de crescimento acelerado.
 
         
-
-\subsection{RQ2- Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?}
-
-Existem diversos desafios técnicos na implementação de uma solução RAG para suporte técnico, tais como para a indexação e recuperação de dados, a integração com sistemas existentes no sentido de alimentação do conhecimento e precisão e relevância das respostas. 
-
-\subsubsection{Indexação, recuperação e relevância das respostas}
-
-A eficiência do RAG depende da capacidade de recuperar documentação relevante. No contexto de suporte técnico, a recuperação necessita ser precisa para fornecer soluções corretas o que é desafiador devido à complexidade e especificidade da documentação \parencite{ToroIsaza2024}.
-
-
-No que toca recuperação por similaridades semanticas, \cite{soman2024observations} refere que o uso de embeddings para chunks de texto grandes (> 200 palavras) resulta em valores de similaridade artificialmente altos. Isso sugere que, mesmo quando as frases não são semanticamente parecidas, o modelo acha que são, apenas por serem longas. Contudo, documentação que usa grande número de abreviações e paragrafos para um tópico tornanam as obeservações mais relevantes. Além disso, concluiu-se palavras-chave mais próximas do começo de de uma frase são recuperadas com maior precisão.
-
-Adicionalmente, estudos recentes revelam que sistemas RAG apresentam dificuldades significativas quando aplicados em ambientes empresariais. \textcite{RAGDoesNotWork2024} demonstram que, mesmo quando a resposta correta está presente no contexto, o sistema frequentemente falha em recuperá-la. Isso ocorre, em parte, devido ao desajuste entre a estrutura dos documentos técnicos (como FAQs, procedimentos, logs, etc.) e as estratégias tradicionais de segmentação em chunks.
-
-Essa falha é confirmada por \textcite{SevenPoints2024}, que identificaram múltiplos pontos críticos no funcionamento de sistemas RAG, incluindo:
-
-\begin{itemize}
-    \item Falta de conteúdo: Quando a informação necessária não está no contexto, o sistema pode responder com conteúdos enganosos, sugerindo que sabe a resposta mesmo sem dados de apoio.
-    \item Fraca classificação da documentação: Mesmo com a informação presente no contexto, ela pode não ser corretamente classificada e consequentemente não recuperada. 
- \item Informação não extraida: Caso haja informações contraditórias no contexto, o retriever pode apresentar falhas.
-  \item Especificidade incorreta: O sistema pode gerar respostas muito vagas ou excessivamente específicas sem compreender especificamente o que foi solicitado.
-\end{itemize}
-
-Diversas técnicas de Finetunning podem ser utilizadas para contornar estas situações.
-
-TODO melhorar daqui para baixo
-
-Contextos maiores geram respostas mais precisas. A inclusão de metadados, como o nome do ficheiro e número do chunk, melhora a interpretação da informação recuperada. Modelos de embeddings open source também se mostram eficazes, especialmente em textos curtos. Para garantir resultados robustos, é essencial calibrar cuidadosamente o pipeline RAG — incluindo chunking, embeddings, recuperação e consolidação — além de manter uma monitorização contínua, dado que o sistema lida com entradas desconhecidas em tempo real.
-
-
-
-\subsubsection{Integração com Sistemas Existentes}
-
-
-
-
-https://arxiv.org/pdf/2409.13707
-
-https://arxiv.org/pdf/2404.00657
-
 
 \section{Trabalhos Relacionados}
 

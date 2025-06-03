@@ -4,6 +4,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitetura simplificada do RAG - https://medium.com/@sahin.samia/what-is-retrieval-augmented-generation-rag-in-llm-and-how-it-works-a8c79e35a172}}{10}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura do chatbot RAG da OptiMicro \blx@tocontentsinit {0}\parencite {lee2024development}}}{20}{figure.caption.68}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitetura do sistema de recomendação de resolução de incidentes proposto por \blx@tocontentsinit {0}\cite {isaza2024retrieval}}}{21}{figure.caption.70}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Processo de Indexação (Adaptado de \blx@tocontentsinit {0}\cite {vspeleticexploring})}}{11}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitetura do chatbot RAG da OptiMicro \blx@tocontentsinit {0}\parencite {lee2024development}}}{21}{figure.caption.69}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitetura do sistema de recomendação de resolução de incidentes proposto por \blx@tocontentsinit {0}\cite {isaza2024retrieval}}}{22}{figure.caption.71}%
 \addvspace {10\p@ }

@@ -19,6 +19,45 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{gupta2024comprehensive}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=90ebd5cc816844867fb61fb6a065a548}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Shailja},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81100f790f95cafc7c2507686b1b429c}{%
+           family={Ranjan},
+           familyi={R\bibinitperiod},
+           given={Rajesh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68705a859cd1fd8da46239f89f7fd0cb}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Surya\bibnamedelima Narayan},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e11cabae704ea0cbc45e565011ffb35e}
+      \strng{fullhash}{e11cabae704ea0cbc45e565011ffb35e}
+      \strng{fullhashraw}{e11cabae704ea0cbc45e565011ffb35e}
+      \strng{bibnamehash}{e11cabae704ea0cbc45e565011ffb35e}
+      \strng{authorbibnamehash}{e11cabae704ea0cbc45e565011ffb35e}
+      \strng{authornamehash}{e11cabae704ea0cbc45e565011ffb35e}
+      \strng{authorfullhash}{e11cabae704ea0cbc45e565011ffb35e}
+      \strng{authorfullhashraw}{e11cabae704ea0cbc45e565011ffb35e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2410.12837}
+      \field{title}{A comprehensive survey of retrieval-augmented generation (rag): Evolution, current landscape and future directions}
+      \field{year}{2024}
+    \endentry
     \entry{ToroIsaza2024}{article}{}{}
       \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=b170428b0dc0d06424856c61c0d43a0b}{%
@@ -190,6 +229,69 @@
       \field{title}{Retrieval Augmented Generation-Based Incident Resolution Recommendation System for IT Support}
       \field{year}{2024}
     \endentry
+    \entry{kamalloo2023evaluating}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=6b124374e516b924daac73f5ad29fab6}{%
+           family={Kamalloo},
+           familyi={K\bibinitperiod},
+           given={Ehsan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2796e06afbb201b2cf70dcd7d0d589b6}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xinyu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d4ccfa89325c7b4e24af3e3281763ca}{%
+           family={Ogundepo},
+           familyi={O\bibinitperiod},
+           given={Odunayo},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba53a70550b85cb71c2a7baabdccac95}{%
+           family={Thakur},
+           familyi={T\bibinitperiod},
+           given={Nandan},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58ada64ffb72c9fb46b0692246538f95}{%
+           family={Alfonso-Hermelo},
+           familyi={A\bibinithyphendelim H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b80b114c6fe57acfe2b7f69f662ad15}{%
+           family={Rezagholizadeh},
+           familyi={R\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d68fb461fc3e26ff36f49c7b52ef0c3f}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e6e5e1fcd3c759fd6b925634eaecb13}
+      \strng{fullhash}{e97b7211afd195515869b410c652955f}
+      \strng{fullhashraw}{e97b7211afd195515869b410c652955f}
+      \strng{bibnamehash}{0e6e5e1fcd3c759fd6b925634eaecb13}
+      \strng{authorbibnamehash}{0e6e5e1fcd3c759fd6b925634eaecb13}
+      \strng{authornamehash}{0e6e5e1fcd3c759fd6b925634eaecb13}
+      \strng{authorfullhash}{e97b7211afd195515869b410c652955f}
+      \strng{authorfullhashraw}{e97b7211afd195515869b410c652955f}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2305.06300}
+      \field{title}{Evaluating embedding APIs for information retrieval}
+      \field{year}{2023}
+    \endentry
     \entry{lee2024development}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=5c698200d2cc6b74dc7ad8087db3dfe0}{%
@@ -246,6 +348,51 @@
       \field{pages}{1080\bibrangedash 1083}
       \range{pages}{4}
     \endentry
+    \entry{rau2024context}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b4459daa41ed961342e0fe1568caca46}{%
+           family={Rau},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d40715daabe18f3238281befdb32fb12}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=feb3ded2661bf19a9afc23fe373ef619}{%
+           family={Déjean},
+           familyi={D\bibinitperiod},
+           given={Hervé},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4e6d7de8826e35542c4a68d112ef390f}{%
+           family={Clinchant},
+           familyi={C\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{09d4ce4c59defc45417996529acfc2d1}
+      \strng{fullhash}{2ecd7c05cd1c3079563a2a3ef3a89c58}
+      \strng{fullhashraw}{2ecd7c05cd1c3079563a2a3ef3a89c58}
+      \strng{bibnamehash}{09d4ce4c59defc45417996529acfc2d1}
+      \strng{authorbibnamehash}{09d4ce4c59defc45417996529acfc2d1}
+      \strng{authornamehash}{09d4ce4c59defc45417996529acfc2d1}
+      \strng{authorfullhash}{2ecd7c05cd1c3079563a2a3ef3a89c58}
+      \strng{authorfullhashraw}{2ecd7c05cd1c3079563a2a3ef3a89c58}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2407.09252}
+      \field{title}{Context embeddings for efficient answer generation in rag}
+      \field{year}{2024}
+    \endentry
     \entry{soman2024observations}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8786c78308837bbc6c0a23820d9f7e73}{%
@@ -284,6 +431,50 @@
       \verb{url}
       \verb https://arxiv.org/pdf/2404.00657
       \endverb
+    \endentry
+    \entry{vspeleticexploring}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c52c46ab47b0a60560aca6b0841a055e}{%
+           family={Špeletić},
+           familyi={Š\bibinitperiod},
+           given={Matija},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=26d85c3070a7a7602dda3b4c5778d060}{%
+           family={Cvetković},
+           familyi={C\bibinitperiod},
+           given={Stevica},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a81979e1c9fd96b8deda1b354b683c5}{%
+           family={Protić},
+           familyi={P\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49ab2e7c735176d516bab592f7192ec7}{%
+           family={Nikolić},
+           familyi={N\bibinitperiod},
+           given={Saša\bibnamedelima V},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aae92f7d7b8d694553cc4c3a1f21b9d0}
+      \strng{fullhash}{a5c793fd046e4d1e9bda6d5069b489fc}
+      \strng{fullhashraw}{a5c793fd046e4d1e9bda6d5069b489fc}
+      \strng{bibnamehash}{aae92f7d7b8d694553cc4c3a1f21b9d0}
+      \strng{authorbibnamehash}{aae92f7d7b8d694553cc4c3a1f21b9d0}
+      \strng{authornamehash}{aae92f7d7b8d694553cc4c3a1f21b9d0}
+      \strng{authorfullhash}{a5c793fd046e4d1e9bda6d5069b489fc}
+      \strng{authorfullhashraw}{a5c793fd046e4d1e9bda6d5069b489fc}
+      \field{sortinit}{Š}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{EXPLORING RAG IN MEDICAL QUESTION ANSWERING: INTEGRATING LLMS AND VECTOR DATABASES}
+      \field{year}{2024}
     \endentry
   \enddatalist
   \missing{RAGDoesNotWork2024}

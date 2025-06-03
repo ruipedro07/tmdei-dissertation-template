@@ -8,13 +8,15 @@
 
 \subsection{Questões de Investigação}
 
-RQ1 - Quais os conceitos fundamentais do RAG?
+RQ1 - Quais as melhores práticas RAG associadas a suporte técnico? 
+RQ1.1 - Quais as melhores práticas de indexaçãoas e recuperação de conhecimento?
+RQ1.2 - Como se comparam os diferentes tipos de armazenamento de conhecimento (vector stores, document stores, etc.)?
+RQ1.3 - Quais as abordagens de Augmentation mais eficazes para melhorar a precisão das respostas?
 
+  
 RQ2 - Quais são os desafios técnicos na implementação de uma solução baseada em RAG para suporte técnico?
 
-RQ3 - Quais as melhores práticas de recuperação do conhecimento e como os modelos de embeddings influenciam nesse processo?
-
-RQ4 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?
+RQ3 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se comparam em termos de arquitetura, flexibilidade e facilidade de utilização?
 
 
 \subsection{Research Scope}
@@ -27,50 +29,33 @@ RQ4 - Como as frameworks ou bibliotecas disponíveis para desenvolvimento RAG se
 \subsection{Coleção de Dados}
 
 
-\section{Conceitos Fundamentais do RAG (RQ1)}
+\section{Melhores Práticas RAG associadas a Suporte Técnico (RQ1)}
 
 
-Apesar dos avanços dos LLMs, estes modelos enfrentam limitações em ambientes onde o acesso a conhecimento atualizado ao contexto é crucial. A técnica de fine-tuning abordada anteriormente é dispendiosa e não escala bem para conteúdos em constante mudança. Retrieval-Augmented Generation (RAG) surge como uma solução alternativa, permitindo enriquecer a geração com acesso em tempo real a fontes externas.
+TODO introduzir secção
 
-RAG é uma técnica que combina LLMs com um mecanismo de recuperação de informação externa. Enquanto que os LLMs apenas se baseiam em dados pré-treinados, o RAG recupera informação relevante de um contexto específico armazenado previamente.
+\subsection{Indexação}
 
-Tendo em consideração que RAG é a peça fundamental de estudo do presente documento, nesta secção serão abordados todos os seus conceitos mais importantes.
-
-\subsection{Arquitetura}
-
-
-O fluxo típico do RAG encontra-se descrito na Figura \ref{fig:acrh-rag}. Em primeira instancia, o processo consiste na formulação de uma questão (\textit{query}) a ser requisitada ao sistema. De seguida, os processos de  Retrieval, Augmentation e Generation ocorrem de forma sequencial: 
-
-
-\begin{itemize}
-    \item \textbf{Retrieval}: Baseado na \textit{query}, a função do \textit{Retriever} é percorrer o conhecimento disponível e encontrar informação que vá de encontro a essa \textit{query}. Funciona como uma espécie de motor de busca e é essencial pois determina a relavância e qualidade da informação que será usada para gerar a resposta final. O métodos de recuperação serão discutidos na secção \ref{recu-context}.
-    \item \textbf{Augmentation}: Através da \textit{query} inicial e da informação recuperada no passo anterior, o processo de \textit{augmentation} consiste na elaboração do \textit{prompt} enriquecido com a informação contextual. Este \textit{prompt} irá conter essa informação com objetivo aumentar o nível de precisão da resposta. Nesta fase, através de Prompt Engineering, é possível manipular o \textit{prompt} de diversas formas, tal como por exemplo a definição da linguagem de resposta, nivel de formalidade ou algum detalhe mais específico. Este processo será analisado em detalhe na secção \ref{augmentation}.
-    \item \textbf{Generation}: Consiste na chamada ao LLM e geração da resposta através do input \textit{prompt} formulado no passo anterior. O conhecimento pré-existente é tido em conta pelo LLM permitindo que as respostas sejam mais inteligentes e informadas para o contexto em questão. 
-\end{itemize}
-
-
-
-https://medium.com/@sandyeep70/understanding-rag-evolution-components-implementation-and-applications-ecf72b778d15
-
+O processo de indexação ocorre antes do sistema RAG estar diponmível para consultas. Consiste na preparação dos dados e armazenamento dos mesmos de forma a que possam ser facilmente recuperados. Este processo encontra-se ilustrado na Figura \ref{fig:acrh-rag}. Primeiramente a documentação é dividida em \textit{chunks}, que são representações legiveis de texto de tamanho reduzido. Estes fragmentos podem ser armazenados diretamente, mas atualmente a melhor prática é serem convertidos em \textit{embeddings}, que são representações vetoriais, através dos embedding models. Estes armazenam informação semântica e dependendo da qualidade do modelo de geração, a eficácia de recuperação é diretamente afetada \parencite{rau2024context, vspeleticexploring}.
 
 
 \begin{figure}[H]
         \centering
-        \includegraphics[width=1\linewidth]{ch2/assets/RAG-ach-2.png
-        }
-        \caption{Arquitetura simplificada do RAG - https://medium.com/@sahin.samia/what-is-retrieval-augmented-generation-rag-in-llm-and-how-it-works-a8c79e35a172}
+        \includegraphics[width=1\linewidth]{ch3/assets/arquitetura-embedding.png}
+        \caption{Processo de Indexação (Adaptado de \cite{vspeleticexploring})}
         \label{fig:acrh-rag}
 \end{figure}
 
 
-\subsection{Representação e Armazenamento do Conhecimento}
+A efetividade de cada modelo depende muito do tipo de contexto e idioma que se pretende indexar. Modelos como o OpenAI ada-002 demonstram desempenho robusto em tarefas em inglês e em diversos domínios, enquanto modelos como Cohere multilingual e o Aleph-Alpha luminous destacam-se pela capacidade de lidar com multiplos idiomas e contextos de baixo recurso \parencite{kamalloo2023evaluating}. 
 
-melhor prática de representação do conhecimento: embeddings : https://arxiv.org/pdf/2407.09252
+Além dos embeddings models existem recuperadores lexicais, como o BM25, que atuam sobre os chunks de texto diretamente e são excelentes em contextos onde é necessário recuperação baseada em palavras-chave. Estes modelos destacam-se pela sua simplicidade e rapidez. Muitas das vezes estes recuperadoes são utilizados em conjunto com os embedding models, onde o BM25 é usado para recuperar os chunks mais relevantes e os embeddings são usados para calcular a similaridade semântica entre a query e os chunks recuperados \parencite{gupta2024comprehensive, kamalloo2023evaluating}.
+
+
+\subsection{Armazenamento}
+
 
 melhor prática de armazenamento: bases de dados vetoriais: https://arxiv.org/pdf/2407.01219
-
-
-\subsubsection{Bases de Dados Vetoriais}
 
 TODO
 
@@ -82,6 +67,9 @@ Importância da base vetorial no contexto do RAG.
 
 
 \subsection{Recuperação do Conhecimento}
+
+TODO a recuperação esta muito ligada à indexação, ver se vale a pena ter outra secção ou juntar tudo na indexação
+
 \label{recu-context}
 
 TODO modelos retriever
@@ -102,7 +90,7 @@ TODO
 
 \subsection{Aplicações Práticas}
 
-TODO 
+TODO se calhar passar isto para os conceitos fundamentais e tambem introduzir o RAG lá 
 
 RAG é atualmente usado, por exemplo, para suporte ao consumidor através da criação de Chatbots capazes de recuperar FAQs e o conhecimento do negócio de forma fácil. Gestão do conhecimento empresarial é outro exemplo de caso de uso, pois permite que os funcionários recuperarem e acedam a informação do contexto de trabalho de forma mais rápida. Este último caso de uso vai de encontro aos objetivos do presente projeto. 
 
@@ -150,9 +138,7 @@ https://arxiv.org/pdf/2404.00657
 
 
 
-\section{Melhores Práticas na Recuperação do Conhecimento (RQ3)}
-
-\section{Frameworks para Desenvolvimento de RAG (RQ4)}
+\section{Frameworks para Desenvolvimento de RAG (RQ3)}
 
 Antes de apresentar cada tecnologia, importa referir que as informações aqui descritas foram obtidas com base na respetiva documentação oficial disponível nos websites de cada projeto. Nesta análise, cada framework será avaliada segundo três critérios: (i) arquitetura, (ii) flexibilidade e (iii) facilidade de utilização. Adicionalmente, serão também consideradas as formas de integração com bases de dados externas (vector stores ou document stores), bem como o suporte e comunidade em torno de cada projeto.
 

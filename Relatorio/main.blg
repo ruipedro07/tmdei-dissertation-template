@@ -1,21 +1,21 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[120] biber-MSWIN64:340> INFO - === 
-[156] Biber.pm:420> INFO - Reading 'main.bcf'
-[275] Biber.pm:994> INFO - Found 12 citekeys in bib section 0
-[291] Biber.pm:4463> INFO - Processing section 0
-[304] Biber.pm:4654> INFO - Looking for bibtex file 'mainbibliography.bib' for section 0
-[382] bibtex.pm:1713> INFO - LaTeX decoding ...
-[410] bibtex.pm:1519> INFO - Found BibTeX data source 'mainbibliography.bib'
-[510] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[510] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[511] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'pt-PT'
-[511] Biber.pm:4289> INFO - No sort tailoring available for locale 'pt-PT'
-[526] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[538] bbl.pm:779> INFO - Output to main.bbl
-[539] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\12659\AppData\Local\Temp\biber_tmp_lU8S\ac02a3e15625690c1bee19bc86acfb6a_139580.utf8, line 43, warning: 3 characters of junk seen at toplevel
-[539] Biber.pm:131> WARN - I didn't find a database entry for 'peffers2007design' (section 0)
-[539] Biber.pm:131> WARN - I didn't find a database entry for 'codigo_2020' (section 0)
-[540] Biber.pm:131> WARN - I didn't find a database entry for 'RAGDoesNotWork2024' (section 0)
-[540] Biber.pm:131> WARN - I didn't find a database entry for 'SevenPoints2024' (section 0)
-[540] Biber.pm:133> INFO - WARNINGS: 5
+[291] biber-MSWIN64:340> INFO - === 
+[411] Biber.pm:420> INFO - Reading 'main.bcf'
+[576] Biber.pm:994> INFO - Found 13 citekeys in bib section 0
+[598] Biber.pm:4463> INFO - Processing section 0
+[643] Biber.pm:4654> INFO - Looking for bibtex file 'mainbibliography.bib' for section 0
+[768] bibtex.pm:1713> INFO - LaTeX decoding ...
+[807] bibtex.pm:1519> INFO - Found BibTeX data source 'mainbibliography.bib'
+[1049] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1049] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1049] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'pt-PT'
+[1050] Biber.pm:4289> INFO - No sort tailoring available for locale 'pt-PT'
+[1148] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1164] bbl.pm:779> INFO - Output to main.bbl
+[1164] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\12659\AppData\Local\Temp\biber_tmp_evXb\ac02a3e15625690c1bee19bc86acfb6a_19680.utf8, line 43, warning: 3 characters of junk seen at toplevel
+[1165] Biber.pm:131> WARN - I didn't find a database entry for 'peffers2007design' (section 0)
+[1165] Biber.pm:131> WARN - I didn't find a database entry for 'codigo_2020' (section 0)
+[1166] Biber.pm:131> WARN - I didn't find a database entry for 'RAGDoesNotWork2024' (section 0)
+[1166] Biber.pm:131> WARN - I didn't find a database entry for 'SevenPoints2024' (section 0)
+[1166] Biber.pm:133> INFO - WARNINGS: 5

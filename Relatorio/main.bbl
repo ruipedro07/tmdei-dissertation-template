@@ -476,6 +476,89 @@
       \field{title}{EXPLORING RAG IN MEDICAL QUESTION ANSWERING: INTEGRATING LLMS AND VECTOR DATABASES}
       \field{year}{2024}
     \endentry
+    \entry{wang2024searching}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{un=1,uniquepart=given,hash=c55febcdb36e6b15ef219efde054401b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaohua},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=2,uniquepart=given,hash=502c5bf131ed4b1c9062fb23d6747479}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhenghua},
+           giveni={Z\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=ff0b94e43b027d10c0b6d69a96c05ad0}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xuan},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ed833e1dfe1d26d742b5ee72ffd744b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Feiran},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73a330faaad926584d1fd300b262919d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yixin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4ad5e908c277b3e173c50030c2e1783d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Zhibo},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6f85784b1d0a2a8aa43d3831a89b43d}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Tianyuan},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=dcf99967345a89a67d3f4fc9d76c8475}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhengyuan},
+           giveni={Z\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=e9f44ef59e92e7a53fb4604eb4e76b1b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shizheng},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2552ce900f90a65e9981774d8911835c}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b8786c0f188ba168bc9a7023c510762}
+      \strng{fullhash}{9bca574b25f0263478a1bbb24111c585}
+      \strng{fullhashraw}{9bca574b25f0263478a1bbb24111c585}
+      \strng{bibnamehash}{1b8786c0f188ba168bc9a7023c510762}
+      \strng{authorbibnamehash}{1b8786c0f188ba168bc9a7023c510762}
+      \strng{authornamehash}{1b8786c0f188ba168bc9a7023c510762}
+      \strng{authorfullhash}{9bca574b25f0263478a1bbb24111c585}
+      \strng{authorfullhashraw}{9bca574b25f0263478a1bbb24111c585}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2407.01219}
+      \field{title}{Searching for best practices in retrieval-augmented generation}
+      \field{year}{2024}
+    \endentry
   \enddatalist
   \missing{RAGDoesNotWork2024}
   \missing{SevenPoints2024}

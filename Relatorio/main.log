@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2025.4.29)  3 JUN 2025 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2025.4.29)  6 JUN 2025 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1642,7 +1642,7 @@ Package hyperref Info: Link coloring OFF on input line 133.
 \openout9 = `main.glsdefs'.
 
 )
-<.//frontmatter/assets/isep_logo.pdf, id=214, 8130.375pt x 993.7125pt>
+<.//frontmatter/assets/isep_logo.pdf, id=218, 8130.375pt x 993.7125pt>
 File: .//frontmatter/assets/isep_logo.pdf Graphic file (type pdf)
 <use .//frontmatter/assets/isep_logo.pdf>
 Package pdftex.def Info: .//frontmatter/assets/isep_logo.pdf  used on input lin
@@ -1809,7 +1809,7 @@ LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <9> not available
 
 
 [14] (main.lof
-Overfull \hbox (2.80652pt too wide) in paragraph at lines 6--6
+Overfull \hbox (2.80652pt too wide) in paragraph at lines 5--5
  [][] [][]\T1/cmbr/m/n/10.95 Arquitetura sim-pli-fi-cada do RAG - https://mediu
 m.com/@sahin.samia/what- 
  []
@@ -1855,7 +1855,7 @@ Cap\'{\i }tulo 1.
 LaTeX Warning: Citation 'peffers2007design' on page 2 undefined on input line 8
 0.
 
-<ch1/dsr.png, id=407, 1158.3275pt x 470.75874pt>
+<ch1/dsr.png, id=412, 1158.3275pt x 470.75874pt>
 File: ch1/dsr.png Graphic file (type png)
 <use ch1/dsr.png>
 Package pdftex.def Info: ch1/dsr.png  used on input line 84.
@@ -1906,431 +1906,421 @@ Cap\'{\i }tulo 2.
 
 ]
 
-[6]) (ch3/chapter3.tex
-
-[7]
-
-[8
-
-]
-Cap\'{\i }tulo 3.
-
-
-[9]
-Overfull \hbox (15.34521pt too wide) in paragraph at lines 53--54
+[6]
+Overfull \hbox (15.34521pt too wide) in paragraph at lines 83--84
 []\T1/cmbr/m/n/10.95 https://medium.com/@sandyeep70/understanding-rag-evolution
 -components-implementation-
  []
 
-<ch2/assets/RAG-ach-2.png, id=447, 722.7pt x 375.4025pt>
+<ch2/assets/RAG-ach-2.png, id=440, 722.7pt x 375.4025pt>
 File: ch2/assets/RAG-ach-2.png Graphic file (type png)
 <use ch2/assets/RAG-ach-2.png>
-Package pdftex.def Info: ch2/assets/RAG-ach-2.png  used on input line 58.
+Package pdftex.def Info: ch2/assets/RAG-ach-2.png  used on input line 88.
 (pdftex.def)             Requested size: 423.9459pt x 220.2139pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
- []\T1/cmbr/m/sc/10 Figura 3.1: |Ar-qui-te-tura sim-pli-fi-cada do RAG - 
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+ []\T1/cmbr/m/sc/10 Figura 2.1: |Ar-qui-te-tura sim-pli-fi-cada do RAG - 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--59
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
  \T1/cmbr/m/sc/10 https://medium.com/@sahin.samia/what-is-retrieval-augmented- 
 
  []
 
 
 
-[10 <./ch2/assets/RAG-ach-2.png>]
-<ch3/assets/arquitetura-embedding.png, id=457, 3095.565pt x 807.015pt>
+[7]) (ch3/chapter3.tex
+
+[8 <./ch2/assets/RAG-ach-2.png>]
+Cap\'{\i }tulo 3.
+<ch3/assets/arquitetura-embedding.png, id=454, 3095.565pt x 807.015pt>
 File: ch3/assets/arquitetura-embedding.png Graphic file (type png)
 <use ch3/assets/arquitetura-embedding.png>
 Package pdftex.def Info: ch3/assets/arquitetura-embedding.png  used on input li
-ne 73.
+ne 44.
 (pdftex.def)             Requested size: 423.9459pt x 110.51851pt.
 
-Overfull \hbox (13.06384pt too wide) in paragraph at lines 87--88
-\T1/cmbr/m/n/10.95 melhor prá-tica de ar-ma-ze-na-mento: ba-ses de da-dos ve-to
--ri-ais: https://arxiv.org/pdf/2407.01219 
- []
 
+[9
+
+]
+
+[10 <./ch3/assets/arquitetura-embedding.png>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.102 ...ex.ai/en/stable/examples/retrievers/bm25_
+l.76 ...dex.ai/en/stable/examples/retrievers/bm25_
                                                   retriever/
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.103 
-      
+l.77 
+     
 ? 
 
-Overfull \hbox (120.22206pt too wide) in paragraph at lines 101--103
-\T1/cmbr/m/n/10.95 TODO mo-de-los re-tri-e-ver TODO tipo isto https://docs.llam
-aindex.ai/en/stable/examples/retrievers/bm25$[]\OML/cmbrm/m/it/10.95 etriever=$
- 
+Overfull \hbox (120.22206pt too wide) in paragraph at lines 75--77
+[]\T1/cmbr/m/n/10.95 TODO mo-de-los re-tri-e-ver TODO tipo isto https://docs.ll
+amaindex.ai/en/stable/examples/retrievers/bm25$[]\OML/cmbrm/m/it/10.95 etriever
+=$ 
  []
 
 
-
-[11 <./ch3/assets/arquitetura-embedding.png>]
-
-LaTeX Warning: Citation 'RAGDoesNotWork2024' on page 12 undefined on input line
- 136.
+LaTeX Warning: Citation 'RAGDoesNotWork2024' on page 11 undefined on input line
+ 110.
 
 
-LaTeX Warning: Citation 'SevenPoints2024' on page 12 undefined on input line 13
-8.
+
+[11]
+
+LaTeX Warning: Citation 'SevenPoints2024' on page 12 undefined on input line 11
+2.
 
 
 
 [12]
 
 [13]
-
-[14]
-Overfull \hbox (47.62898pt too wide) in paragraph at lines 225--226
+Overfull \hbox (47.62898pt too wide) in paragraph at lines 197--198
 []\T1/cmbr/m/n/10.95 Estes sis-te-mas são ace-di-dos atra-vés de abs-tra-ções c
 omo \T1/cmtl/b/n/10.95 VectorStoreRetriever \T1/cmbr/m/n/10.95 e \T1/cmtl/b/n/1
 0.95 DocumentLoaders\T1/cmbr/m/n/10.95 ,
  []
 
 
-Overfull \hbox (70.24974pt too wide) in paragraph at lines 233--235
+Overfull \hbox (70.24974pt too wide) in paragraph at lines 205--207
 []\T1/cmbr/m/n/10.95 https://www.ibm.com/think/topics/langchain https://python.
 langchain.com/v0.1/docs/modules/chains/ 
  []
 
 
 
-[15]
-Overfull \hbox (22.73645pt too wide) in paragraph at lines 269--272
+[14]
+Overfull \hbox (22.73645pt too wide) in paragraph at lines 241--244
 []\T1/cmbr/m/n/10.95 https://medium.com/aimonks/haystack-an-alternative-to-lang
 chain-carrying-llms-bf7c515c9a7e
  []
 
 
-Overfull \hbox (3.14516pt too wide) in paragraph at lines 269--272
+Overfull \hbox (3.14516pt too wide) in paragraph at lines 241--244
 \T1/cmbr/m/n/10.95 https://haystack.deepset.ai/overview/intro https://docs.hays
 tack.deepset.ai/docs/pipeline-
  []
 
 
 
-[16]
+[15]
 
-[17]
-Overfull \hbox (3.34218pt too wide) in paragraph at lines 354--354
+[16]
+Overfull \hbox (3.34218pt too wide) in paragraph at lines 326--326
 []|\T1/cmbr/bx/n/10.95 Flexibilidade| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/bx/n/10.95 Facilidade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/bx/n/10.95 de uti-li-za-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/bx/n/10.95 Integração
  []
 
 
-Underfull \hbox (badness 4492) in paragraph at lines 354--354
+Underfull \hbox (badness 4492) in paragraph at lines 326--326
 \T1/cmbr/bx/n/10.95 com ba-ses
  []
 
 
-Underfull \hbox (badness 5217) in paragraph at lines 354--354
+Underfull \hbox (badness 5217) in paragraph at lines 326--326
 \T1/cmbr/bx/n/10.95 ve-to-ri-ais /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/bx/n/10.95 do-cu-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/bx/n/10.95 Suporte,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/bx/n/10.95 co-mu-ni-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/bx/n/10.95 dade e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/bx/n/10.95 do-cu-men-
  []
 
 
-Overfull \hbox (4.5701pt too wide) in paragraph at lines 354--354
+Overfull \hbox (4.5701pt too wide) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Orquestração
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 mo-du-lar e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 FAISS,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 Pi-ne-cone,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 Ch-roma,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 Re-dis,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 We-a-vi-ate,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Comunidade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 / Su-porte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 men-ta-ção
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Arquitetura
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 354--354
+Underfull \hbox (badness 3838) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 ori-en-tada a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 com-po-nen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Suporte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 ro-busto
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 ment Sto-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 res"como
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 Elas-tic-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 se-arch,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 Qdrant,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 We-a-vi-ate;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 su-por-tando
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 in-de-xa-ção
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 ve-to-rial e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Comunidade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 / Su-porte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 cu-men-ta-ção
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Arquitetura
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 mo-du-lar;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 in-te-gra-ção
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 com o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 ecos-sis-tema
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Alta para
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 pro-gra-ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 FAISS,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 Qdrant,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 Pi-ne-cone,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 We-a-vi-ate;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 in-te-gra-ção
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 atra-vés de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 "Vec-torS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 []|\T1/cmbr/m/n/10.95 Comunidade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--354
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
 \T1/cmbr/m/n/10.95 ta-ção em
  []
 
 
 
-[18]
+[17]
 
-[19]
-<ch3/assets/optimicro-arch.png, id=521, 841.1425pt x 652.4375pt>
+[18]
+<ch3/assets/optimicro-arch.png, id=525, 841.1425pt x 652.4375pt>
 File: ch3/assets/optimicro-arch.png Graphic file (type png)
 <use ch3/assets/optimicro-arch.png>
-Package pdftex.def Info: ch3/assets/optimicro-arch.png  used on input line 386.
+Package pdftex.def Info: ch3/assets/optimicro-arch.png  used on input line 358.
 
 (pdftex.def)             Requested size: 423.9459pt x 328.83621pt.
 
 
-[20]
+[19]
 
-[21 <./ch3/assets/optimicro-arch.png (PNG copy)>]
-<ch3/assets/ticket-recomendation-rag.png, id=534, 119.44624pt x 222.33063pt>
+[20 <./ch3/assets/optimicro-arch.png (PNG copy)>]
+<ch3/assets/ticket-recomendation-rag.png, id=538, 119.44624pt x 222.33063pt>
 File: ch3/assets/ticket-recomendation-rag.png Graphic file (type png)
 <use ch3/assets/ticket-recomendation-rag.png>
 Package pdftex.def Info: ch3/assets/ticket-recomendation-rag.png  used on input
- line 410.
+ line 382.
 (pdftex.def)             Requested size: 127.18506pt x 236.73456pt.
 )
 
-[22 <./ch3/assets/ticket-recomendation-rag.png>]
+[21 <./ch3/assets/ticket-recomendation-rag.png>]
 
-[23]
+[22] (appendices/appendixA.tex
+
+[23
+
+]
 
 [24
-
-] (appendices/appendixA.tex
-
-[25]
-
-[26
 
 ]
 Ap\^endice A.
 )
 
-[27] (main.aux)
+[25] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -2342,17 +2332,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 8FA0680A74AEEA6BB3E6D96990D8BEBB;8692
-(rerunfilecheck)             After:  2FAA3E8BBA431EE50A116C49080D29E9;8798.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E386C319E7D7924979E3D65ED58A06D0;8630.
 
 Package biblatex Warning: Please rerun LaTeX.
 (biblatex)                Page breaks have changed.
@@ -2362,44 +2343,40 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59556 strings out of 469964
- 1406976 string characters out of 5480025
- 2380974 words of memory out of 5000000
- 85414 multiletter control sequences out of 15000+600000
+ 59574 strings out of 469964
+ 1407315 string characters out of 5480025
+ 2382385 words of memory out of 5000000
+ 85434 multiletter control sequences out of 15000+600000
  646545 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,20n,131p,2475b,3325s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{appendix.74} has been referenced but does not exist
-, replaced by a fixed one
-
- <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\eb
-tl10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/d
-pi600\cmbrmi8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/c
-mbright/dpi657\tbmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/
-public/cmbright/dpi600\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk
-/ljfour/public/cmbright/dpi600\ebmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\
-fonts/pk/ljfour/public/cmbright/dpi600\cmbr8.pk> <C:\Users\12659\AppData\Local\
-MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbrsy8.pk> <C:\Users\12659\AppDa
-ta\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbr10.pk> <C:\Users\126
-59\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbrmi10.pk> <C:
-\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\ebbx10
-.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi60
-0\ebmr9.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbrigh
-t/dpi450\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/
-cmbright/dpi600\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/
-public/cmbright/dpi657\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk
-/ljfour/public/cmbright/dpi657\ebtl10.pk> <C:\Users\12659\AppData\Local\MiKTeX\
-fonts/pk/ljfour/public/cmbright/dpi657\ebmo10.pk> <C:\Users\12659\AppData\Local
-\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebmr10.pk> <C:\Users\12659\AppDa
-ta\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi720\ebbx10.pk> <C:\Users\126
-59\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi864\ebbx10.pk> <C:\U
-sers\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi1244\ebbx10.
-pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi149
-3\ebbx10.pk>
-Output written on main.pdf (47 pages, 1012125 bytes).
+ <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\
+ebtl10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright
+/dpi600\cmbrmi8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public
+/cmbright/dpi657\tbmr10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/public/cmbright/dpi600\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/
+pk/ljfour/public/cmbright/dpi600\ebmr10.pk> <C:\Users\12659\AppData\Local\MiKTe
+X\fonts/pk/ljfour/public/cmbright/dpi600\cmbr8.pk> <C:\Users\12659\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbrsy8.pk> <C:\Users\12659\App
+Data\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbr10.pk> <C:\Users\1
+2659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\cmbrmi10.pk> <
+C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi540\ebbx
+10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi
+600\ebmr9.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbri
+ght/dpi450\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/publi
+c/cmbright/dpi600\ebmr8.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/public/cmbright/dpi657\ebbx10.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/
+pk/ljfour/public/cmbright/dpi657\ebtl10.pk> <C:\Users\12659\AppData\Local\MiKTe
+X\fonts/pk/ljfour/public/cmbright/dpi657\ebmo10.pk> <C:\Users\12659\AppData\Loc
+al\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi657\ebmr10.pk> <C:\Users\12659\App
+Data\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi720\ebbx10.pk> <C:\Users\1
+2659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi864\ebbx10.pk> <C:
+\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi1244\ebbx1
+0.pk> <C:\Users\12659\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi1
+493\ebbx10.pk>
+Output written on main.pdf (45 pages, 1013762 bytes).
 PDF statistics:
- 1283 PDF objects out of 1440 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
- 459 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1281 PDF objects out of 1440 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 467 words of extra memory for PDF output out of 10000 (max. 10000000)
 

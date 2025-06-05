@@ -54,16 +54,16 @@ Além dos embeddings models existem recuperadores lexicais, como o BM25, que atu
 
 \subsection{Armazenamento}
 
+O armazenamento do conhecimento RAG pode ser feito de vários formas. Em casos de sistemas pequenos, onde a quantidade de documentação é reduzida, pode ser suficiente o uso de dados brutos presentes em ficheiros ou bases de dados relacionais (TODO referencia). Contudo, para sistemas onde a quantidade de documentação é extensa, a melhor prática é o uso de bases e dados vetoriais, que são otimizadas para armazenar e recuperar embeddings de forma eficiente e escalável \parencite{wang2024searching}. 
 
-melhor prática de armazenamento: bases de dados vetoriais: https://arxiv.org/pdf/2407.01219
-
-TODO
-
-Conceito de embeddings e busca vetorial.
-Exemplos de ferramentas (FAISS, Weaviate, Pinecone).<
-Importância da base vetorial no contexto do RAG.
+Um estudo de \cite{wang2024searching} comparou diferentes bases de dados vetorias open-source  — incluindo Weaviate, Faiss, Chroma, Qdrant, e Milvus  — de acordo com os seguintes critérios: Multiple Index Type — flexibilidade para otimizar pesquisas baseado em diferentes carateristicas de dados, Billion-scale — capacidade de lidar com grandes volumes de dados, Hybrid Search — combinação de pesquisa tradicional por keywords com pesquisa vetorial, Cloud-native — capacidade de gestão em ambientes cloud. Concluiu-se que Milvus é a solução mais completa por cumprir com o quatro critérios. 
 
 
+TODO remover este paragrafo? 
+O FAISS é araterizado por ser uma biblioteca com excelente desempenho local. No entanto, não é cloud-native, nem oferece suporte a Hybrid Search, o que pode limitar seu uso em arquiteturas modernas baseadas em microserviços ou em cloud.
+TODO ====
+
+Por outro lado, soluções como PGVector oferecem a vantagem de simplificar a infraestrutura ao integrar a busca vetorial diretamente em bases relacionais amplamente utilizadas, como o PostgreSQL. Embora não ofereça a mesma escalabilidade que sistemas como Milvus, pode ser uma escolha adequada para casos onde a complexidade e o volume de dados são moderados, ou quando há necessidade de integração com sistemas existentes.
 
 
 \subsection{Recuperação do Conhecimento}

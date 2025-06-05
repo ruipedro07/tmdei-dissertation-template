@@ -2384,15 +2384,17 @@
     <bcf:citekey order="12" intorder="1">kamalloo2023evaluating</bcf:citekey>
     <bcf:citekey order="13" intorder="1">gupta2024comprehensive</bcf:citekey>
     <bcf:citekey order="13" intorder="2">kamalloo2023evaluating</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">ToroIsaza2024</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">soman2024observations</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">RAGDoesNotWork2024</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">SevenPoints2024</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">lee2024development</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">lee2024development</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">isaza2024retrieval</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">isaza2024retrieval</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">wang2024searching</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">wang2024searching</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">ToroIsaza2024</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">soman2024observations</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">RAGDoesNotWork2024</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">SevenPoints2024</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">lee2024development</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">lee2024development</bcf:citekey>
     <bcf:citekey order="22" intorder="1">isaza2024retrieval</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">isaza2024retrieval</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">isaza2024retrieval</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

@@ -49,8 +49,6 @@ O processo de indexação ocorre antes do sistema RAG estar diponmível para con
 
 A efetividade de cada modelo depende muito do tipo de contexto e idioma que se pretende indexar. Modelos como o OpenAI ada-002 demonstram desempenho robusto em tarefas em inglês e em diversos domínios, enquanto modelos como Cohere multilingual e o Aleph-Alpha luminous destacam-se pela capacidade de lidar com multiplos idiomas e contextos de baixo recurso \parencite{kamalloo2023evaluating}. 
 
-Além dos embeddings models existem recuperadores lexicais, como o BM25, que atuam sobre os chunks de texto diretamente e são excelentes em contextos onde é necessário recuperação baseada em palavras-chave. Estes modelos destacam-se pela sua simplicidade e rapidez. Muitas das vezes estes recuperadoes são utilizados em conjunto com os embedding models, onde o BM25 é usado para recuperar os chunks mais relevantes e os embeddings são usados para calcular a similaridade semântica entre a query e os chunks recuperados \parencite{gupta2024comprehensive, kamalloo2023evaluating}.
-
 
 \subsection{Armazenamento}
 
@@ -63,17 +61,42 @@ TODO remover este paragrafo?
 O FAISS é araterizado por ser uma biblioteca com excelente desempenho local. No entanto, não é cloud-native, nem oferece suporte a Hybrid Search, o que pode limitar seu uso em arquiteturas modernas baseadas em microserviços ou em cloud.
 TODO ====
 
-Por outro lado, soluções como PGVector oferecem a vantagem de simplificar a infraestrutura ao integrar a busca vetorial diretamente em bases relacionais amplamente utilizadas, como o PostgreSQL. Embora não ofereça a mesma escalabilidade que sistemas como Milvus, pode ser uma escolha adequada para casos onde a complexidade e o volume de dados são moderados, ou quando há necessidade de integração com sistemas existentes.
+Por outro lado, soluções como PGVector oferecem a vantagem de simplificar a infraestrutura ao integrar a busca vetorial diretamente em bases relacionais amplamente utilizadas, como o PostgreSQL. Embora não ofereça a mesma escalabilidade que sistemas como Milvus, pode ser uma escolha adequada para casos onde a complexidade e o volume de dados são moderados, ou quando há necessidade de integração com sistemas existentes (TODO referencia).
 
 
-\subsection{Recuperação do Conhecimento}
-
-TODO a recuperação esta muito ligada à indexação, ver se vale a pena ter outra secção ou juntar tudo na indexação
-
+\subsection{Recuperação e Geração de Respostas}
 \label{recu-context}
 
-TODO modelos retriever
-TODO tipo isto https://docs.llamaindex.ai/en/stable/examples/retrievers/bm25_retriever/
+
+Após a indexação e armazenamento do contexto, o sistema RAG está preparado para responder a consultas. A recuperação pode ser feita exclusivamente através de embedding model, através de um comparação semântica entre a query e os chunks indexados, ou através de recuperadores lexicais quando se pretende velocidade e menor utilização de recursos. 
+
+O processo de recuperação semântica encontra-se representado na Figura \ref{fig:acrh-retrieval}. 
+
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{ch3/assets/arq-retrieval.png}
+        \caption{Processo de Recuperação e Geração exclusivamente com Embedding Model (Adaptado de \cite{vspeleticexploring})}
+        \label{fig:acrh-retrieval}
+\end{figure}
+
+
+Primeiramente a query de consulta é vectorizada através do mesmo embedding model utilizado na indexação dos dados. É importante que o modelo seja o mesmo para garantir que os embeddings estejam no mesmo espaço semântico. A partir daí, é feita uma pesquisa por similaridade entre a query vectorizada e os chunks indexados na base de dados. Para finalizar, ocorre a geração da prompt query que resulta na junção da query inicial com os chunks recuperados. Esta prompt é então enviada para o LLM, que gera a resposta final.
+
+Além da recuperação exclusiva com embeddings models, existem recuperadores lexicais que atuam diretamente sobre os chunks de texto legíveis. Estes recuperadores apenas atuam sobre uma base de dados textual e recuperam os chunks mais relevantes com base em palavras-chave. Um exemplo bastante utilizado é o BM25, que se destaca pela sua simplicidade e rapidez. 
+
+Recuperação de forma hibrida é também uma abordagem comum, onde o recuperador lexical é usado para recuperar os chunks mais relevantes e os embeddings são usados para calcular a similaridade semântica entre a query e os chunks recuperados para fins de reranking e filtragem final \parencite{gupta2024comprehensive, kamalloo2023evaluating}. Esse processo encontra-se ilustrado na Figura \ref{fig:acrh-bm25}.
+
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{ch3/assets/arq-bm25.png}
+        \caption{Processo de Recuperação e Geração com Recuperador Lexical e Embedding Model}
+        \label{fig:acrh-bm25}
+\end{figure}
+
+
+A escolha entre recuperação semântica ou lexical depende do contexto e dos requisitos do sistema. Recuperação semântica é mais eficaz para contextos complexos e técnicos, onde a compreensão do significado é crucial, enquanto a recuperação lexical pode ser suficiente para contextos mais simples ou quando a velocidade é uma prioridade.
 
 
 \subsection{Augmentation}

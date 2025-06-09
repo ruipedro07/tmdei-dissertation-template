@@ -5,6 +5,8 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitetura simplificada do RAG - https://medium.com/@sahin.samia/what-is-retrieval-augmented-generation-rag-in-llm-and-how-it-works-a8c79e35a172}}{8}{figure.caption.32}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Processo de Indexação (Adaptado de \blx@tocontentsinit {0}\cite {vspeleticexploring})}}{10}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura do chatbot RAG da OptiMicro \blx@tocontentsinit {0}\parencite {lee2024development}}}{20}{figure.caption.69}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitetura do sistema de recomendação de resolução de incidentes proposto por \blx@tocontentsinit {0}\cite {isaza2024retrieval}}}{21}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Processo de Recuperação e Geração exclusivamente com Embedding Model (Adaptado de \blx@tocontentsinit {0}\cite {vspeleticexploring})}}{11}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Processo de Recuperação e Geração com Recuperador Lexical e Embedding Model}}{12}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitetura do chatbot RAG da OptiMicro \blx@tocontentsinit {0}\parencite {lee2024development}}}{21}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitetura do sistema de recomendação de resolução de incidentes proposto por \blx@tocontentsinit {0}\cite {isaza2024retrieval}}}{22}{figure.caption.73}%
 \addvspace {10\p@ }

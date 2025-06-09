@@ -30,25 +30,25 @@
 \contentsline {section}{\numberline {3.2}Melhores Práticas RAG associadas a Suporte Técnico (RQ1)}{9}{section.41}%
 \contentsline {subsection}{\numberline {3.2.1}Indexação}{9}{subsection.42}%
 \contentsline {subsection}{\numberline {3.2.2}Armazenamento}{10}{subsection.44}%
-\contentsline {subsection}{\numberline {3.2.3}Recuperação do Conhecimento}{11}{subsection.45}%
-\contentsline {subsection}{\numberline {3.2.4}Augmentation}{11}{subsection.46}%
-\contentsline {subsubsection}{Prompt Engineering}{11}{section*.47}%
-\contentsline {subsection}{\numberline {3.2.5}Aplicações Práticas}{11}{subsection.48}%
-\contentsline {section}{\numberline {3.3}Desafios Técnicos na Implementação (RQ2)}{11}{section.49}%
-\contentsline {subsection}{\numberline {3.3.1}Indexação, recuperação e relevância das respostas}{11}{subsection.50}%
-\contentsline {subsection}{\numberline {3.3.2}Integração com Sistemas Existentes}{12}{subsection.51}%
-\contentsline {section}{\numberline {3.4}Frameworks para Desenvolvimento de RAG (RQ3)}{12}{section.52}%
-\contentsline {subsection}{\numberline {3.4.1}LangChain}{12}{subsection.53}%
-\contentsline {subsection}{\numberline {3.4.2}Prompt Templates}{13}{subsection.54}%
-\contentsline {subsection}{\numberline {3.4.3}Haystack}{14}{subsection.61}%
-\contentsline {subsection}{\numberline {3.4.4}LlamaIndex}{15}{subsection.62}%
-\contentsline {subsection}{\numberline {3.4.5}Spring AI}{15}{subsection.63}%
-\contentsline {subsection}{\numberline {3.4.6}Comparação resumo entre tecnologias}{17}{subsection.64}%
-\contentsline {section}{\numberline {3.5}Trabalhos Relacionados}{19}{section.66}%
-\contentsline {subsection}{\numberline {3.5.1}Análise Individual}{19}{subsection.67}%
-\contentsline {subsubsection}{RAG Chatbot para a OptiMicro Technologies}{19}{section*.68}%
-\contentsline {subsubsection}{Sistema RAG de Recomendação para Suporte Técnico}{20}{section*.70}%
-\contentsline {subsubsection}{Fabula}{21}{section*.72}%
-\contentsline {subsection}{\numberline {3.5.2}Conclusões}{22}{subsection.73}%
-\contentsline {chapter}{Bibliografia}{23}{chapter*.74}%
-\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{25}{appendix.75}%
+\contentsline {subsection}{\numberline {3.2.3}Recuperação e Geração de Respostas}{10}{subsection.45}%
+\contentsline {subsection}{\numberline {3.2.4}Augmentation}{12}{subsection.48}%
+\contentsline {subsubsection}{Prompt Engineering}{12}{section*.49}%
+\contentsline {subsection}{\numberline {3.2.5}Aplicações Práticas}{12}{subsection.50}%
+\contentsline {section}{\numberline {3.3}Desafios Técnicos na Implementação (RQ2)}{13}{section.51}%
+\contentsline {subsection}{\numberline {3.3.1}Indexação, recuperação e relevância das respostas}{13}{subsection.52}%
+\contentsline {subsection}{\numberline {3.3.2}Integração com Sistemas Existentes}{13}{subsection.53}%
+\contentsline {section}{\numberline {3.4}Frameworks para Desenvolvimento de RAG (RQ3)}{14}{section.54}%
+\contentsline {subsection}{\numberline {3.4.1}LangChain}{14}{subsection.55}%
+\contentsline {subsection}{\numberline {3.4.2}Prompt Templates}{14}{subsection.56}%
+\contentsline {subsection}{\numberline {3.4.3}Haystack}{16}{subsection.63}%
+\contentsline {subsection}{\numberline {3.4.4}LlamaIndex}{17}{subsection.64}%
+\contentsline {subsection}{\numberline {3.4.5}Spring AI}{17}{subsection.65}%
+\contentsline {subsection}{\numberline {3.4.6}Comparação resumo entre tecnologias}{18}{subsection.66}%
+\contentsline {section}{\numberline {3.5}Trabalhos Relacionados}{20}{section.68}%
+\contentsline {subsection}{\numberline {3.5.1}Análise Individual}{20}{subsection.69}%
+\contentsline {subsubsection}{RAG Chatbot para a OptiMicro Technologies}{20}{section*.70}%
+\contentsline {subsubsection}{Sistema RAG de Recomendação para Suporte Técnico}{21}{section*.72}%
+\contentsline {subsubsection}{Fabula}{22}{section*.74}%
+\contentsline {subsection}{\numberline {3.5.2}Conclusões}{23}{subsection.75}%
+\contentsline {chapter}{Bibliografia}{25}{chapter*.76}%
+\contentsline {chapter}{Ap\^endice \numberline {A}Appendix Title Here}{27}{appendix.77}%
